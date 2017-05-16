@@ -1,0 +1,2279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Obren Sijan</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/obrensijan.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation --> 
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+    <li class="sidebar-brand"> <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a> </li>
+    <li> <a href="#top" onclick = $("#menu-close").click(); >Home</a> </li>
+    <li> <a href="#about" onclick = $("#menu-close").click(); >About</a> </li>
+    <li> <a href="#services" onclick = $("#menu-close").click(); >Services</a> </li>
+    <li> <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a> </li>
+    <li> <a href="#contact" onclick = $("#menu-close").click(); >Contact</a> </li>
+  </ul>
+</nav>
+
+<!-- Header -->
+<header id="top" class="header">
+  <div class="text-vertical-center">
+    <h1>Obren Sijan</h1>
+    <h3>Developer / System Administrator</h3>
+    <br>
+    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a> </div>
+</header>
+
+
+
+
+
+
+<!-- Services -->
+<section id="services" class="services bg-primary">
+<div class="container">
+<div class="row text-center">
+<div class="col-lg-10 col-lg-offset-1">
+<div class="row">
+
+<!--About Me-->
+<div class="col-md-3 col-sm-6">
+<div class="service-item">
+<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-user fa-stack-1x text-primary"></i> </span>
+<h4> <strong>About Me</strong> </h4>
+<p align="center">Allow me to introduce myself. </p>
+<button href="#AboutMe" class="btn btn-light" data-toggle="modal" data-target="#modalAboutMe">
+Learn More
+</div>
+</div>
+
+
+
+
+
+
+
+<!--CODESHOWCASE-->
+<div class="col-md-3 col-sm-6">
+<div class="service-item">
+<span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-file-code-o fa-stack-1x text-primary"></i> </span>
+<h4> <strong>Code Showcase</strong> </h4>
+<p>School projects, data structure implementions, and a showcase of my coding style.</p>
+<div class="dropdown">
+<a name="about"></a>
+<button href="#CodeShowcase" class="btn btn-light" data-toggle="collapse" >Learn More</button>
+ </div>
+</div>
+
+<div id="CodeShowcase" class="collapse">
+    <button href="#eMovie" class="btn btn-light" data-toggle="modal" data-target="#modalLinkedList">Linked list</button>
+    <ul id= "projectList">
+    <li class="divider"> </li>
+    </ul>
+  <button href="#Package" class="btn btn-light" data-toggle="modal" data-target="#modalPackage">Polymorphism/Inheritance</button>
+  	<ul id= "projectList">
+    <li class="divider"> </li>
+    </ul>
+  <button href="#telephone" class="btn btn-light" data-toggle="modal" data-target="#modalBST">Binary Search Tree</button>
+  <ul id= "projectList">
+    <li class="divider"> </li>
+    </ul>
+  <button href="#hashMap" class="btn btn-light" data-toggle="modal" data-target="#modalHashMap">HashMap</button>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <!--RESUME-->
+  <div class="col-md-3 col-sm-6">
+  <div class="service-item">
+  <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-file-text-o fa-stack-1x text-primary"></i> </span>
+  <h4> <strong>Résumé</strong> </h4>
+  <p>Everything you need to know about my past school and work experience. Test.</p>
+  <button href="#Resume" class="btn btn-light" data-toggle="modal" data-target="#modalResume">
+  Learn More</a>
+  </div>
+  </div>
+  
+  <div class="col-md-3 col-sm-6">
+  <div class="service-item">
+  <span class="fa-stack fa-4x"> <i class="fa fa-circle fa-stack-2x"></i> <i class="fa fa-lightbulb-o fa-stack-1x text-primary"></i> </span>
+  <h4> <strong>Personal Projects</strong> </h4>
+  <p>The best way to learn something new is to create something new</p>
+  <button href="#Personal" class="btn btn-light" data-toggle="modal" data-target="#modalPersonalProjects">Learn More</button>
+  </div>
+  </div>
+  </div>
+  <!-- /.row (nested) -->
+  </div>
+  <!-- /.col-lg-10 -->
+  </div>
+  <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  </section>
+  
+  
+ 
+  
+  
+  
+  <!-- Modal Resume -->
+    <div id="modalResume" class="modal fade" role="dialog">
+      <div class="modal-dialog"> 
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <!-- Modal Resume -->
+    <div id="modalPersonalProjects" class="modal fade" role="dialog">
+      <div class="modal-dialog-md"> 
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+        
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Personal Projects</h4>
+          </div>
+           <div class="modal-body">
+        <div class="tabbable"> <!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs">
+        <li class="active">
+        <button href="#tab1" data-toggle="tab">Cellule</a></li>
+        
+        </ul>
+        <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          
+            </div>
+            
+           
+       	<video autoplay loop class="embed-responsive-item">
+                        <source src=videos/cellule.mp4 type=video/mp4>
+                      </video>
+       
+      <div class="col-md-3 col-sm-6">
+ 
+  <a href="https://github.com/osijan/cellule"><i class="fa fa-github  fa-5x"></i></a>
+      <br></br>
+      <p>In Cellule, you play as a minute cell thats eats and battles to grow and survive.</p>
+            <p>The game is still in early develpment.
+            </p>
+            <br></br>
+     <strong>What I have finished so far:</strong>
+     
+     <li>Randomly Generated food (green dots)</li>
+     <li> Player follows mouse </li>
+     <li> Player grows as it eats </li>
+     <li> Player speed slows down as it grows</li>
+     <li> Pressing space gives player a burst of speed </li>
+     <li> Score Display </li>
+     <li> Speed Display </li>
+     
+     
+        </div>
+        
+        </div>
+        </div>
+   </div></div></div></div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <!-- Modal About Me -->
+  <div id="modalAboutMe" class="modal fade" role="dialog">
+    <div class="modal-dialog"> 
+      
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">A little bit about myself</h4>
+        </div>
+        <div class="modal-body">
+          <p>Hello, my name is Obren Sijan. I’m currently A senior studying Computer Science at the University of Wisconsin- Whitewater. For the past three years I have been interning at the Computer Systems Lab (CSL) for the University of Wisconsin- Madison. Working at the CSL has been a wonderful learning experience. During my time I have worked as a System Admin where I helped maintain and troubleshoot the 980 computers / servers that we support. At the CSL, I often took up side projects where I gained experience in documenting solutions to problems I have solved, configuring switches and servers, developing python programs, creating bash scripts, and improving the CSL’s public facing website. </p>
+          <p>When It comes to coding, in descending order from most comfortable to least, I have developed in C++, Python, Java, C, and Swift. </p>
+          <p>Putting my career aside, I am a very easy going, cool headed and goal oriented person. I am also an avid gamer, movie critic, and gym goer. Even though recently most of my free time has been going into developing my Indie game called “Bacterium” in which the player controls a white blood cell that must fight off bacteria. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  
+
+  
+  <style>
+    
+
+.modal
+{
+margin : 0 auto;
+}
+
+
+</style>
+  
+  
+  
+  
+        
+  
+  
+  
+  
+  <!-- Modal LINKEDLIST -->
+  <div id="modalLinkedList" class="modal fade" role="dialog">
+    <div class="modal-dialog-md"> 
+      
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="container">
+            <div class="page-header">
+              <h1>Linked List.<span class="pull-right label label-default"></span></h1>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+              <div class="panel with-nav-tabs panel-default">
+              <div class="panel-heading">
+              <ul class="nav nav-tabs">
+              <li class="active">
+              <button href="#aboutLinkedList" data-toggle="tab">
+              About This Program</a>
+              </li>ß
+              <li>
+              <button href="#liveDemoLinkedList" data-toggle="tab">
+              Live Demo</a>
+              </li>
+              <li class="dropdown"> 
+              <a href="#" data-toggle="dropdown">Source Code <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+              <li>
+              <button href="#linkedListH" data-toggle="tab">
+              linkedList.h</a>
+              </li>
+              <li>
+              <button href="#listNodeH" data-toggle="tab">
+              listNode.h</a>
+              </li>
+              <li>
+              <button href="#mainLinkedListCPP" data-toggle="tab">
+              Main.cpp</a>
+              </li>
+              <li>
+              <button href="#personH" data-toggle="tab">
+              person.h</a>
+              </li>
+              <li>
+              <button href="#personCPP" data-toggle="tab">
+              person.cpp</a>
+              </li>
+             
+              </ul>
+              </li>
+              </ul>
+              </div>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="aboutLinkedList">
+                    <p>This program uses a Linked List to print out a report about the crew and passangers of the titanic.</p>
+                    <p> The following program contains my own Linked List implementation as well as the following programming concepts: 
+                    <li> Vectors </li>
+                    <li> File I/O </li>
+                    <li> String Tokenization </li>
+                    <li> Pointers / Iterators </li>
+                    <li> Traversing Linked Lists </li>
+                    
+                  </div>
+                  <div class="tab-pane fade" id="liveDemo">Default 2</div>
+                  <div class="tab-pane fade" id="liveDemoLinkedList">
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+                      <video autoplay loop class="embed-responsive-item">
+                        <source src=videos/LinkedList.mp4 type=video/mp4>
+                      </video>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="linkedListH">
+                    <pre class="prettyprint cpp">
+                        <span class="pre">
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+
+#include &lt;iostream&gt;
+#include "ListNode.h"
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="keyword">
+class</span> LinkedList<span class="operator"> {</span><span class="keyword">
+
+    public</span><span class="operator">:</span>
+
+       LinkedList<span class="operator">();
+       ~</span>LinkedList<span class="operator">();</span><span class="type">
+       int</span> getSize<span class="operator">();</span><span class="type">
+       bool</span> isEmpty<span class="operator">();</span><span class="type">
+       void</span> insertAtHead<span class="operator">(</span>NODETYPE<span class="operator"> &amp;);</span><span class="type">
+       bool</span> removeFromHead<span class="operator">();</span><span class="type">
+       void</span> insertAtTail<span class="operator">(</span>NODETYPE<span class="operator"> &amp;);</span><span class="type">
+       bool</span> removeFromTail<span class="operator">();</span><span class="type">
+       void</span> printList<span class="operator">();</span><span class="keyword">
+
+private</span><span class="operator">:</span><span class="type">
+       int</span> size<span class="operator">;</span>
+
+  ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>firstNode<span class="operator">;</span>
+       ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>lastNode<span class="operator">;</span>
+       ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>getNewNode<span class="operator">(</span><span class="keyword">const</span> NODETYPE<span class="operator"> &amp;);
+
+};</span><span class="comment">
+
+// Constructor
+</span><span class="keyword">template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> LinkedList<span class="operator">() {</span>
+      size<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span>
+      firstNode<span class="operator"> =</span> lastNode<span class="operator"> =</span> NULL<span class="operator">;
+
+}</span><span class="comment">
+/* Function isEmpty: return true if the list is empty, otherwise, return false */</span><span class="keyword">
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+bool</span> LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> isEmpty<span class="operator">() {</span><span class="flow">
+        if</span><span class="operator"> (</span>firstNode<span class="operator"> ==</span> NULL<span class="operator"> &amp;&amp;</span> lastNode<span class="operator"> ==</span> NULL<span class="operator">)</span><span class="flow">
+           return</span><span class="bool"> true</span><span class="operator">;</span><span class="flow">
+        else return</span><span class="bool"> false</span><span class="operator">;
+}</span><span class="comment">
+
+/* function getSize: return the number of elements in this list */</span><span class="keyword">
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+int</span>  LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; ::</span> getSize<span class="operator">() {</span><span class="flow">
+        return</span> size<span class="operator">;
+}</span><span class="comment">
+
+/* function  insertAtHead: insert an element at the head of the LinkedList */</span><span class="keyword">
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+void</span> LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> insertAtHead<span class="operator">(</span>NODETYPE<span class="operator"> &amp;</span> newData<span class="operator">) {</span>
+        ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;  *</span>newPtr<span class="operator"> =</span> getNewNode<span class="operator">(</span>newData<span class="operator">);</span><span class="flow">
+
+        if</span><span class="operator">  (</span>isEmpty<span class="operator">()) {</span>
+           firstNode<span class="operator"> =</span> lastNode<span class="operator"> =</span> newPtr<span class="operator">;
+}</span><span class="flow">
+        else</span><span class="operator"> {</span>
+           newPtr<span class="operator"> -&gt;</span> nextNode<span class="operator"> =</span> firstNode<span class="operator">;</span>
+           firstNode<span class="operator"> =</span> newPtr<span class="operator">;
+        }</span>
+        size<span class="operator">++;
+}</span><span class="comment">
+/* function removeFromHead: remove the element at the head of the LinkedList */</span><span class="keyword">
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+bool</span> LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> removeFromHead<span class="operator">() {</span><span class="flow">
+
+        if</span><span class="operator"> (</span>isEmpty<span class="operator">())</span><span class="flow">
+           return</span><span class="bool"> false</span><span class="operator">;</span><span class="flow">
+        else</span><span class="operator"> {</span>
+           ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>tempPtr<span class="operator"> =</span> firstNode<span class="operator">;</span><span class="flow">
+           if</span><span class="operator"> (</span>firstNode<span class="operator"> ==</span> lastNode<span class="operator">)</span>
+              firstNode<span class="operator"> =</span> lastNode<span class="operator"> =</span> NULL<span class="operator">;</span><span class="flow">
+           else</span>
+              firstNode<span class="operator"> =</span> firstNode<span class="operator"> -&gt;</span> nextNode<span class="operator">;</span><span class="keyword">
+           delete</span> tempPtr<span class="operator">;</span>
+           size<span class="operator"> --;</span><span class="flow">
+ return</span><span class="bool"> true</span><span class="operator">;
+        }
+}</span><span class="comment">
+/* function insertAtTail: insert an element to the tail of the LinkedList */</span><span class="keyword">
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+void</span> LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; ::</span> insertAtTail<span class="operator">(</span> NODETYPE<span class="operator"> &amp;</span> newData<span class="operator">) {</span>
+
+     ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>newPtr<span class="operator"> =</span> getNewNode<span class="operator">(</span>newData<span class="operator">);</span><span class="flow">
+     if</span><span class="operator"> (</span>isEmpty<span class="operator">()) {</span>
+          firstNode<span class="operator"> =</span> lastNode<span class="operator"> =</span> newPtr<span class="operator">;
+     }</span><span class="flow">
+     else</span><span class="operator"> {</span>
+          lastNode<span class="operator"> -&gt;</span> nextNode<span class="operator"> =</span> newPtr<span class="operator">;</span>
+          lastNode<span class="operator"> =</span> newPtr<span class="operator">;
+     }</span>
+     size<span class="operator">++;
+}</span><span class="comment">
+/* function removeFromTail:  remove the element pointed by the last node  of the LinkedList */</span><span class="keyword">
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+bool</span> LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; ::</span> removeFromTail<span class="operator">() {</span><span class="flow">
+
+        if</span><span class="operator"> (</span>isEmpty<span class="operator">())</span><span class="flow">
+            return</span><span class="bool"> false</span><span class="operator">;</span><span class="flow">
+        else</span><span class="operator"> {</span>
+           ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>tempPtr<span class="operator"> =</span> firstNode<span class="operator">;</span><span class="flow">
+
+           if</span><span class="operator"> (</span>firstNode<span class="operator">  ==</span> lastNode<span class="operator">)</span>
+              firstNode<span class="operator"> =</span> lastNode<span class="operator"> =</span> NULL<span class="operator">;</span><span class="flow">
+           else</span><span class="operator">  {</span><span class="flow">
+              while</span><span class="operator"> (</span>tempPtr<span class="operator"> -&gt;</span> nextNode<span class="operator"> !=</span> lastNode<span class="operator">) {</span>
+                 tempPtr<span class="operator"> =</span> tempPtr<span class="operator"> -&gt;</span> nextNode<span class="operator">;
+              }</span>
+             lastNode<span class="operator"> =</span> tempPtr<span class="operator">;</span>
+              tempPtr<span class="operator"> =</span> tempPtr<span class="operator"> -&gt;</span> nextNode<span class="operator">;</span>
+              lastNode<span class="operator"> -&gt;</span> nextNode<span class="operator"> =</span> NULL<span class="operator">;
+          }</span><span class="keyword">
+          delete</span> tempPtr<span class="operator">;</span>
+          size<span class="operator"> --;</span><span class="flow">
+          return</span><span class="bool"> true</span><span class="operator">;
+        }
+}</span><span class="comment">
+/* function printList: navigate through the list and print out the data */</span><span class="keyword">
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+void</span> LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> printList<span class="operator">() {</span><span class="flow">
+
+         if</span><span class="operator"> (</span>isEmpty<span class="operator">())</span>
+            cout<span class="operator"> &lt;&lt;</span><span class="string">" This is an empty list \n"</span><span class="operator">;</span><span class="flow">
+         else</span><span class="operator"> {</span>
+             ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>currentPtr<span class="operator"> =</span> firstNode<span class="operator">;</span><span class="flow">
+             while</span><span class="operator"> (</span>currentPtr<span class="operator"> !=</span> NULL<span class="operator">) {</span>
+        
+                 cout<span class="operator"> &lt;&lt;</span> currentPtr<span class="operator"> -&gt;</span> data<span class="operator"> &lt;&lt;</span><span class="string"> "\n"</span><span class="operator">;</span>
+                 currentPtr<span class="operator"> =</span> currentPtr<span class="operator"> -&gt;</span> nextNode<span class="operator">;
+             }</span>
+             cout<span class="operator"> &lt;&lt;</span> endl<span class="operator">;
+         }
+}</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> getNewNode<span class="operator">(</span><span class="keyword"> const</span> NODETYPE<span class="operator"> &amp;</span> newData<span class="operator">) {</span><span class="flow">
+
+      return</span><span class="operator"> (</span><span class="keyword">new</span> ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; (</span>newData<span class="operator">));
+}</span><span class="keyword">
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;:: ~</span>LinkedList<span class="operator">() {</span><span class="flow">
+
+      if</span><span class="operator"> (!</span>isEmpty<span class="operator">()) {</span>
+          cout<span class="operator"> &lt;&lt;</span><span class="string">" Deleting all the nodes \n"</span><span class="operator">;</span>
+          ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>currentPtr<span class="operator">=</span> firstNode<span class="operator">;</span>
+          ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>tempPtr<span class="operator">;</span><span class="flow">
+
+          while</span><span class="operator"> (</span>currentPtr<span class="operator"> !=</span> NULL<span class="operator">) {</span>
+              tempPtr<span class="operator"> =</span> currentPtr<span class="operator">;</span>
+              currentPtr<span class="operator">  =</span>currentPtr<span class="operator"> -&gt;</span> nextNode<span class="operator">;</span><span class="keyword">
+              delete</span> tempPtr<span class="operator">;
+          }</span>
+          cout<span class="operator"> &lt;&lt;</span><span class="string"> "Releasing  all memory \n"</span><span class="operator">;
+        }
+}</span><span class="pre">
+#endif
+</span>
+
+ 
+</pre>
+
+               </div>
+                  <div class="tab-pane fade" id="listNodeH">
+                    <pre class="prettyprint cpp">
+                    <span class="pre">
+#ifndef LISTNODE_H
+#define LISTNODE_H
+</span><span class="keyword">using namespace</span> std<span class="operator">;</span><span class="keyword">
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="keyword"> class</span> LinkedList<span class="operator">;</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="keyword">
+class</span> ListNode<span class="operator"> {</span><span class="keyword">
+
+        friend class</span> LinkedList<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;;</span><span class="keyword">
+        public</span><span class="operator">:</span>
+           ListNode<span class="operator">(</span><span class="keyword">const</span> NODETYPE<span class="operator"> &amp;);</span>
+           ListNode<span class="operator">(</span><span class="keyword">const</span> NODETYPE<span class="operator"> &amp;,</span> ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *);</span>
+           NODETYPE  getData<span class="operator">();</span><span class="type">
+           void</span> setData<span class="operator">(</span>NODETYPE<span class="operator"> &amp;);</span>
+           ListNode getNextNode<span class="operator">() ;</span><span class="type">
+           void</span> setNextNode<span class="operator">(</span>ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *);</span><span class="keyword">
+
+        private</span><span class="operator">:</span>
+           NODETYPE data<span class="operator">;</span>
+           ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>nextNode<span class="operator">;
+};</span><span class="comment">
+
+// first constructor
+</span><span class="keyword">
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+ListNode<span class="operator"> &lt;</span>NODETYPE<span class="operator">&gt;::</span> ListNode<span class="operator">(</span><span class="keyword">const</span> NODETYPE<span class="operator"> &amp;</span> newData<span class="operator">) :</span> data<span class="operator">(</span>newData<span class="operator">),</span> nextNode<span class="operator">(</span><span class="int">0</span><span class="operator">) {
+
+
+
+}</span><span class="comment">
+
+// second Constructor
+</span><span class="keyword">template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> ListNode<span class="operator"> (</span><span class="keyword">const</span> NODETYPE<span class="operator"> &amp;</span> newData<span class="operator">,</span> ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>newNextPtr<span class="operator">) {</span>
+
+data<span class="operator"> =</span> newData<span class="operator">;</span>
+nextNode<span class="operator"> =</span> newNextPtr<span class="operator">;
+
+
+}</span><span class="keyword">
+
+
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+NODETYPE ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> getData<span class="operator">(){</span><span class="flow">
+
+        return</span> data<span class="operator">;
+
+}</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+void</span> ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> setData<span class="operator">(</span>NODETYPE<span class="operator"> &amp;</span> newData<span class="operator">) {</span>
+        data<span class="operator"> =</span> newData<span class="operator">;
+}</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;</span> ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; ::</span> getNextNode<span class="operator">() {</span><span class="flow">
+
+        return</span> nextNode<span class="operator">;
+}</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+void</span> ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> setNextNode<span class="operator">(</span> ListNode<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>newNextPtr<span class="operator">) {</span>
+        
+       nextNode<span class="operator"> =</span> newNextPtr<span class="operator">;
+}</span><span class="pre">
+
+#endif</span>
+ 
+</pre>
+
+
+
+               </div>
+                  <div class="tab-pane fade" id="mainLinkedListCPP">
+ <pre class="prettyprint cpp">
+                    <span class="pre">
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+#include &lt;vector&gt;
+#include &lt;cstdlib&gt;
+#include "person.cpp"
+#include &lt;list&gt;
+#include "LinkedList.h"
+#include "ListNode.h"
+</span><span class="keyword">using namespace</span> std<span class="operator">;</span><span class="keyword">
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> T<span class="operator">&gt;</span><span class="type"> 
+bool</span> PComp<span class="operator">(</span><span class="keyword">const</span> T<span class="operator"> *</span><span class="keyword"> const</span><span class="operator"> &amp;</span> a<span class="operator">,</span><span class="keyword"> const</span> T<span class="operator"> *</span><span class="keyword"> const</span><span class="operator"> &amp;</span> b<span class="operator">)
+{</span><span class="flow">
+   return</span><span class="operator"> *</span>a<span class="operator"> &lt; *</span>b<span class="operator">;
+}</span><span class="type">
+
+int</span><span class="keyword"> main</span><span class="operator">() {</span><span class="comment">
+
+        //Creating Linked List
+</span>        vector<span class="operator">&lt;</span>person<span class="operator">* &gt;</span> myPerson<span class="operator">(</span><span class="int">1400</span><span class="operator">);</span>
+        list<span class="operator"> &lt;</span>person<span class="operator">*&gt;</span> L<span class="operator">;</span><span class="type">
+        int</span> i<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="comment">
+
+        //Opening File
+</span>        ifstream File<span class="operator"> (</span><span class="string">"titanic.csv"</span><span class="operator">);</span><span class="flow">
+        if</span><span class="operator"> (!</span>File<span class="operator">)
+        {</span>
+                cerr<span class="operator"> &lt;&lt;</span><span class="string">"File not opened"</span><span class="operator">&lt;&lt;</span> endl<span class="operator">;
+
+        }</span><span class="comment">
+
+        //Reading Data
+</span>        string buffer<span class="operator">;</span><span class="flow">
+        while</span><span class="operator"> (</span>File<span class="operator">.</span>good<span class="operator">()){</span>
+          getline<span class="operator">(</span>File<span class="operator">,</span> buffer<span class="operator">);</span><span class="flow">
+          if</span><span class="operator"> (</span>File<span class="operator">.</span>good<span class="operator">() ==</span><span class="bool"> false</span><span class="operator">)</span><span class="flow"> continue</span><span class="operator">;</span>
+          istringstream iss<span class="operator">(</span>buffer<span class="operator">);</span>
+          string index<span class="operator">;</span>
+          string clas<span class="operator">;</span>
+          string age<span class="operator">;</span>
+          string sex<span class="operator">;</span>
+          string survived<span class="operator">;</span>
+          getline<span class="operator">(</span>iss<span class="operator">,</span> index<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span>
+          getline<span class="operator">(</span>iss<span class="operator">,</span> clas<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span>
+          getline<span class="operator"> (</span>iss<span class="operator">,</span> age<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span>
+          getline<span class="operator"> (</span>iss<span class="operator">,</span> sex<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span>
+          getline<span class="operator"> (</span>iss<span class="operator">,</span> survived<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span><span class="comment">
+
+          //Creating "Person" Object w/ info from file
+</span>          myPerson<span class="operator">[</span>i<span class="operator">] =</span><span class="keyword"> new</span> person<span class="operator">(</span>index<span class="operator">,</span>clas<span class="operator">,</span>age<span class="operator">,</span>sex<span class="operator">,</span>survived<span class="operator">);</span><span class="comment">
+          //Adding "Person" to Linked List 
+</span>          L<span class="operator">.</span>push_front<span class="operator">(</span>myPerson<span class="operator">[</span>i<span class="operator">]);</span>
+          i<span class="operator">++;
+        }</span><span class="type">
+
+
+int</span> survived<span class="operator"> =</span><span class="int">0</span><span class="operator">;</span><span class="type">
+int</span> dead<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span><span class="type">
+int</span> wSurvived<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span><span class="type">
+int</span> mSurvived<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span><span class="type">
+int</span> cDead<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span><span class="type">
+int</span> mDead<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span><span class="type">
+int</span> wDead<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span><span class="type">
+int</span> firstClass<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="type">
+int</span> secondClass<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="type">
+int</span> thirdClass<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="comment">
+
+//Iterator 
+</span>list<span class="operator">&lt;</span>person<span class="operator">*&gt;::</span>iterator j<span class="operator">;</span><span class="comment">
+
+//Going through the list
+</span><span class="flow">for</span><span class="operator">(</span>j<span class="operator">=</span>L<span class="operator">.</span>begin<span class="operator">();</span> j<span class="operator"> !=</span> L<span class="operator">.</span>end<span class="operator">(); ++</span>j<span class="operator">){</span><span class="comment"> 
+//(*j)-&gt;print();
+
+
+// Total Alive/Dead
+</span><span class="flow">if</span><span class="operator"> ((*</span>j<span class="operator">)-&gt;</span>getSurvive<span class="operator">().</span>find<span class="operator">(</span><span class="string">"yes"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)
+        {</span>survived<span class="operator">++;}</span><span class="flow">
+if</span><span class="operator"> ((*</span>j<span class="operator">)-&gt;</span>getSurvive<span class="operator">().</span>find<span class="operator">(</span><span class="string">"no"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)
+        {</span>dead<span class="operator">++;}</span><span class="comment">
+// total Women Dead
+</span><span class="flow">if</span><span class="operator"> (((*</span>j<span class="operator">)-&gt;</span>getSex<span class="operator">().</span>find<span class="operator">(</span><span class="string">"women"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">) &amp;&amp; ((*</span>j<span class="operator">)-&gt;</span>getAge<span class="operator">().</span>find<span class="operator">(</span><span class="string">"adults"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">) &amp;&amp;</span> $
+wDead<span class="operator">++;
+}</span><span class="comment">
+
+
+
+
+//total Men Dead
+</span><span class="flow">if</span><span class="operator"> (((*</span>j<span class="operator">)-&gt;</span>getSex<span class="operator">().</span>find<span class="operator">(</span><span class="string">"man"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">) &amp;&amp; ((*</span>j<span class="operator">)-&gt;</span>getAge<span class="operator">().</span>find<span class="operator">(</span><span class="string">"adults"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">) &amp;&amp; ((</span>$
+mDead<span class="operator">++;
+}</span><span class="comment">
+
+//total Children Dead
+</span><span class="flow">if</span><span class="operator"> (((*</span>j<span class="operator">)-&gt;</span>getAge<span class="operator">().</span>find<span class="operator">(</span><span class="string">"child"</span><span class="operator">) !=</span>  std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)  &amp;&amp; ((*</span>j<span class="operator">)-&gt;</span>getSurvive<span class="operator">().</span>find<span class="operator">(</span><span class="string">"no"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)){</span>
+        cDead<span class="operator">++;
+}</span><span class="comment">
+
+// First Class Alive
+</span><span class="flow">if</span><span class="operator"> (((*</span>j<span class="operator">)-&gt;</span>getClass<span class="operator">().</span>find<span class="operator">(</span><span class="string">"1st"</span><span class="operator">) !=</span>  std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)  &amp;&amp; ((*</span>j<span class="operator">)-&gt;</span>getSurvive<span class="operator">().</span>find<span class="operator">(</span><span class="string">"yes"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)){</span>
+        firstClass<span class="operator">++;
+}</span><span class="comment">
+
+// Second Class Alive
+</span><span class="flow">if</span><span class="operator"> (((*</span>j<span class="operator">)-&gt;</span>getClass<span class="operator">().</span>find<span class="operator">(</span><span class="string">"2nd"</span><span class="operator">) !=</span>  std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)  &amp;&amp; ((*</span>j<span class="operator">)-&gt;</span>getSurvive<span class="operator">().</span>find<span class="operator">(</span><span class="string">"yes"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)){</span>
+        secondClass<span class="operator">++;
+}</span><span class="comment">
+
+//Third Class Alive
+</span><span class="flow">if</span><span class="operator"> (((*</span>j<span class="operator">)-&gt;</span>getClass<span class="operator">().</span>find<span class="operator">(</span><span class="string">"3rd"</span><span class="operator">) !=</span>  std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)  &amp;&amp; ((*</span>j<span class="operator">)-&gt;</span>getSurvive<span class="operator">().</span>find<span class="operator">(</span><span class="string">"yes"</span><span class="operator">) !=</span> std<span class="operator">::</span>string<span class="operator">::</span>npos<span class="operator">)){</span>
+        thirdClass<span class="operator">++;
+}
+}</span>
+
+
+cout<span class="operator">&lt;&lt;</span> endl<span class="operator">&lt;&lt;</span><span class="string"> "\t TITANIC REPORT"</span><span class="operator">&lt;&lt;</span>endl<span class="operator">;</span>
+cout<span class="operator">&lt;&lt;</span><span class="string"> "-------------------------------"</span><span class="operator">;</span>
+cout<span class="operator"> &lt;&lt;</span> endl<span class="operator"> &lt;&lt;</span><span class="string"> "survived: "</span><span class="operator">&lt;&lt;</span>survived<span class="operator">&lt;&lt;</span> endl<span class="operator">;</span>
+cout<span class="operator">&lt;&lt;</span><span class="string"> "non-survived: "</span><span class="operator">&lt;&lt;</span>dead<span class="operator">&lt;&lt;</span>endl<span class="operator">;</span>
+
+cout<span class="operator"> &lt;&lt;</span><span class="string"> "women that died: "</span><span class="operator"> &lt;&lt;</span> wDead<span class="operator"> &lt;&lt;</span>endl<span class="operator">;</span>
+cout<span class="operator"> &lt;&lt;</span><span class="string"> "men that died: "</span><span class="operator">&lt;&lt;</span> mDead<span class="operator"> &lt;&lt;</span>endl<span class="operator">;</span>
+cout<span class="operator"> &lt;&lt;</span><span class="string">"children that died: "</span><span class="operator">&lt;&lt;</span> cDead<span class="operator"> &lt;&lt;</span>endl<span class="operator">;</span>
+
+cout<span class="operator">&lt;&lt;</span><span class="string">  "First Class Survievd: "</span><span class="operator"> &lt;&lt;</span> firstClass<span class="operator"> &lt;&lt;</span>endl<span class="operator">;</span>
+cout<span class="operator">&lt;&lt;</span><span class="string">  "Second Class Survievd: "</span><span class="operator"> &lt;&lt;</span> secondClass<span class="operator"> &lt;&lt;</span>endl<span class="operator">;</span>
+cout<span class="operator">&lt;&lt;</span><span class="string">  "Third Class Survievd: "</span><span class="operator"> &lt;&lt;</span> thirdClass<span class="operator"> &lt;&lt;</span>endl<span class="operator">;</span>
+cout<span class="operator">&lt;&lt;</span><span class="string"> "-------------------------------"</span><span class="operator"> &lt;&lt;</span> endl<span class="operator">;</span>
+sort<span class="operator">(</span>myPerson<span class="operator">.</span>begin<span class="operator">(),</span> myPerson<span class="operator">.</span>end<span class="operator">(),</span> PComp<span class="operator">&lt;</span>person<span class="operator">&gt;);</span>
+L<span class="operator">.</span>sort<span class="operator">(</span>PComp<span class="operator">&lt;</span>person<span class="operator">&gt;);</span><span class="flow">
+
+for</span><span class="operator">(</span>j<span class="operator">=</span>L<span class="operator">.</span>begin<span class="operator">();</span> j<span class="operator"> !=</span> L<span class="operator">.</span>end<span class="operator">(); ++</span>j<span class="operator">){</span>
+        cout<span class="operator"> &lt;&lt; (*</span>j<span class="operator">) -&gt;</span> getSurvived<span class="operator">();
+
+}
+}</span>
+ 
+</pre>
+
+
+
+               </div>
+                  <div class="tab-pane fade" id="personH">
+                    <pre class="prettyprint cpp">
+ 
+ <span class="pre">#include &lt;string&gt;
+
+
+#ifndef PERSON_H
+#define PERSON_H
+
+#include &lt;string&gt;
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span><span class="keyword">
+
+class</span> person<span class="operator">{</span>
+        string cindex<span class="operator">;</span>
+        string cclas<span class="operator">;</span>
+        string cage<span class="operator">;</span>
+        string csex<span class="operator">;</span>
+        string csurvived<span class="operator">;</span><span class="keyword">
+
+public</span><span class="operator">:</span>
+ person<span class="operator">(</span>string i<span class="operator">,</span> string c<span class="operator">,</span> string a<span class="operator">,</span> string s<span class="operator">,</span> string su<span class="operator">);</span><span class="type">
+        void</span> print<span class="operator">();</span><span class="type">
+        void</span> setSurvive<span class="operator">(</span>string<span class="operator">);</span>
+        string getSurvive<span class="operator">();</span><span class="type">
+        void</span> setSex<span class="operator">(</span>string<span class="operator">);</span>
+        string getSex<span class="operator">();</span><span class="type">
+        void</span> setClass<span class="operator">(</span>string<span class="operator">);</span>
+        string getClass<span class="operator">();</span><span class="type">
+        void</span> setAge<span class="operator">(</span>string<span class="operator">);</span>
+        string getAge<span class="operator">();
+};</span><span class="pre">
+
+
+#endif
+</span>
+ 
+ 
+</pre>
+                  </div>
+                  <div class="tab-pane fade" id="personCPP">
+                    <pre class="prettyprint cpp">
+<span class="pre">
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include "person.h"
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span>
+
+person<span class="operator">::</span>person<span class="operator">(</span>string i<span class="operator">,</span> string c<span class="operator">,</span> string a<span class="operator">,</span> string s<span class="operator">,</span> string su<span class="operator">)
+{</span>
+        cindex<span class="operator"> =</span> i<span class="operator">;</span>
+        cclas<span class="operator"> =</span> c<span class="operator">;</span>
+        cage<span class="operator"> =</span> a<span class="operator">;</span>
+        csex<span class="operator"> =</span> s<span class="operator">;</span>
+        csurvived<span class="operator"> =</span> su<span class="operator">;
+
+}</span><span class="type">
+
+
+void</span> person<span class="operator">::</span>print<span class="operator">() {</span>
+        cout<span class="operator"> &lt;&lt;</span><span class="string"> "------------------------------------"</span><span class="operator"> &lt;&lt;</span>endl<span class="operator">;</span>
+        cout<span class="operator"> &lt;&lt;</span> cindex<span class="operator"> &lt;&lt;</span> endl<span class="operator">;</span>
+        cout<span class="operator"> &lt;&lt;</span> cclas<span class="operator"> &lt;&lt;</span> endl<span class="operator">;</span>
+        cout<span class="operator"> &lt;&lt;</span> cage<span class="operator"> &lt;&lt;</span> endl<span class="operator">;</span>
+        cout<span class="operator"> &lt;&lt;</span> csex<span class="operator"> &lt;&lt;</span> endl<span class="operator">;</span>
+        cout<span class="operator"> &lt;&lt;</span>  csurvived<span class="operator"> &lt;&lt;</span> endl<span class="operator">;</span>
+        cout<span class="operator"> &lt;&lt;</span><span class="string"> "------------------------------------"</span><span class="operator"> &lt;&lt;</span>endl<span class="operator">;
+
+
+}</span><span class="type">
+
+void</span> person<span class="operator">::</span>setSurvive<span class="operator">(</span>string su<span class="operator">){</span>
+        csurvived<span class="operator"> =</span> su<span class="operator">;
+}</span>
+
+string person<span class="operator">::</span>getSurvive<span class="operator">() {</span><span class="flow">
+
+        return</span> csurvived<span class="operator">;
+}</span><span class="type">
+
+void</span> person<span class="operator">::</span>setSex<span class="operator">(</span>string s<span class="operator">){</span>
+        csex<span class="operator"> =</span> s<span class="operator">;
+}</span>
+string person<span class="operator">::</span> getSex<span class="operator">(){</span><span class="flow">
+        return</span> csex<span class="operator">;
+}</span><span class="type">
+
+void</span> person<span class="operator">::</span>setClass<span class="operator">(</span>string c<span class="operator">){</span>
+        cclas<span class="operator"> =</span> c<span class="operator">;
+}</span>
+string person<span class="operator">::</span> getClass<span class="operator">(){</span><span class="flow">
+        return</span> cclas<span class="operator">;
+}</span><span class="type">
+
+void</span> person<span class="operator">::</span>setAge<span class="operator">(</span>string a<span class="operator">){</span>
+        cage<span class="operator"> =</span> a<span class="operator">;
+}</span>
+string person<span class="operator">::</span>getAge<span class="operator">(){</span><span class="flow">
+        return</span> cage<span class="operator">;
+}</span>
+</pre></div></p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    
+    
+  
+  <!-- Modal About Me -->
+  <div id="modalPersonalProjectsa" class="modal fade" role="dialog">
+    <div class="modal-dialog"> 
+      
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer>
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-10 col-lg-offset-1 text-center">
+  <h4><strong>Obren Sijan</strong> </h4>
+  <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">obsijan@gmail.com</a> </li>
+</ul>
+<br>
+<ul class="list-inline">
+  <li> <a href="https://github.com/osijan"><i class="fa fa-github  fa-fw fa-3x"></i></a> </li>
+  <li> <a href="https://www.linkedin.com/pub/obren-sijan/111/699/75a"><i class="fa fa-linkedin  fa-fw fa-3x"></i></a> </li>
+  </ul>
+<hr class="small">
+<p class="text-muted">This website was created by Obren Sijan</p>
+<p class="text-muted">Image contributed by <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+</div>
+</div>
+</div>
+</footer>
+
+<!------------------------------------------------------->
+
+
+
+
+
+<!-- Modal BST Project --------------------------------------------->
+  <div id="modalBST" class="modal fade" role="dialog">
+    <div class="modal-dialog-md"> 
+      
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="container">
+            <div class="page-header">
+              <h1>Binary Search Tree<span class="pull-right label label-default"></span></h1>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+              <div class="panel with-nav-tabs panel-default">
+              <div class="panel-heading">
+              <ul class="nav nav-tabs">
+              <li class="active">
+              <button href="#aboutBST" data-toggle="tab">
+              About This Program</a>
+              </li>
+              <li>
+              <button href="#liveDemoBST" data-toggle="tab">
+              Live Demo</a></li>
+              <li class="dropdown"> 
+              <a href="#" data-toggle="dropdown">Source Code <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+              <li>
+              <button href="#BSTH" data-toggle="tab">
+              BinarySearchTree.h</a>
+              </li>
+              <li>
+              <button href="#nodeH" data-toggle="tab">
+              Node.h</a>
+              </li>
+              <li>
+              <button href="#BSTMainCPP" data-toggle="tab">
+              main.cpp</a>
+              </li>
+              <li class="divider"></li>
+              <button href="#100hashTags" data-toggle="tab">
+              100HashTags.txt</a>
+              
+              </ul>
+              </div>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="aboutBST">
+                    <p>This program asks for the user to enter in a tweet, it then uses a Binary Search Tree to check and see if the tweet contains one of the top 100 hashtags of 2015.</p>
+                    <li>Reading from a text file</li>
+                    <li>String mutation</li>
+                    <li>Nodes</li> 
+                    <li>Find </li>
+                    <li>Binary Search Tree Traversal</li>
+                    
+                    
+                    
+                  </div>
+                  <div class="tab-pane fade" id="liveDemo">Default 2</div>
+                  <div class="tab-pane fade" id="liveDemoBST">
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+                      <video autoplay loop class="embed-responsive-item">
+                        <source src=videos/BST.mp4 type=video/mp4>
+                      </video>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="BSTH">
+                   <pre class="prettyprint cpp"> <span class="pre">
+#ifndef BST_H
+#define BST_H
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span><span class="pre">
+
+#include &lt;string&gt;
+#include  &lt;ios&gt;
+#include &lt;ostream&gt;
+</span><span class="keyword">
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="keyword">
+class</span> BinarySearchTree<span class="operator"> {</span><span class="keyword">
+
+        public</span><span class="operator">:</span>
+            BinarySearchTree<span class="operator">();</span>
+            BinarySearchTree<span class="operator">(</span>Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *);</span>
+            BinarySearchTree<span class="operator">(</span>NODETYPE<span class="operator"> &amp;,</span> BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *,</span>
+                             BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *);</span><span class="comment">
+         //   ~BinarySearchTree();
+</span><span class="type">            void</span> insertNode<span class="operator">(</span>NODETYPE<span class="operator"> &amp;);</span>
+            BinarySearchTråee<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>getLeftTree<span class="operator">();</span>
+            BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>getRightTree<span class="operator">();</span>
+            string getInOrderTraversal<span class="operator">(</span>BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *);</span><span class="comment">
+           // bool search(string value);
+</span>           NODETYPE<span class="operator">*</span> find<span class="operator">(</span>NODETYPE<span class="operator">&amp;</span> target<span class="operator">);</span><span class="keyword">
+            virtual</span><span class="type"> bool</span> insert<span class="operator">(</span> NODETYPE<span class="operator">&amp;</span> item<span class="operator">);</span><span class="comment">
+           // virtual string toString() ; 
+          //  bool is_null(); 
+</span><span class="keyword">
+
+ private</span><span class="operator">:</span>
+            Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>root<span class="operator">;</span>
+            NODETYPE<span class="operator">*</span> find<span class="operator">(</span>Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;*</span> local_root<span class="operator">,</span> NODETYPE<span class="operator">&amp;</span> target<span class="operator">);</span><span class="keyword">
+            virtual</span><span class="type"> bool</span> insert<span class="operator">(</span>Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;*&amp;</span> local_root<span class="operator">,</span>  NODETYPE<span class="operator">&amp;</span> item<span class="operator">);
+
+        
+
+
+};</span><span class="comment">
+
+// First constructor: create an empty tree
+</span><span class="keyword">template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; ::</span> BinarySearchTree<span class="operator">() {</span>
+        root<span class="operator"> =</span> NULL<span class="operator">;
+}</span><span class="comment">
+
+// Second constructor: create a BST given a root node
+</span><span class="keyword">template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; ::</span> BinarySearchTree<span class="operator">(</span>Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>newRoot<span class="operator">) {</span>
+        root<span class="operator"> =</span> newRoot<span class="operator">;
+}</span><span class="comment">
+// Third constructor: create a BST given  data for the root, left tree and rig$
+</span><span class="keyword">template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> BinarySearchTree<span class="operator">(</span>NODETYPE<span class="operator"> &amp;</span> newData<span class="operator">,</span>
+                         BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>leftTree<span class="operator">,</span>
+                         BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>rightTree<span class="operator">) {</span><span class="keyword">
+
+        this</span><span class="operator"> -&gt;</span> root<span class="operator"> =</span><span class="keyword"> new</span> Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; (</span>newData<span class="operator">);</span><span class="flow">
+        if</span><span class="operator"> (</span>leftTree<span class="operator"> !=</span> NULL<span class="operator">)</span><span class="keyword">
+           this</span><span class="operator"> -&gt;</span> root<span class="operator"> -&gt;</span> leftNode<span class="operator"> =</span> leftTree<span class="operator"> -&gt;</span> root<span class="operator">;</span><span class="flow">
+        if</span><span class="operator"> (</span>rightTree<span class="operator"> !=</span> NULL<span class="operator">)</span><span class="keyword">
+            this</span><span class="operator"> -&gt;</span> root<span class="operator"> -&gt;</span> rightNode<span class="operator"> =</span> rightTree<span class="operator"> -&gt;</span> root<span class="operator">;
+}</span><span class="keyword">
+ template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+           ostream<span class="operator">&amp;</span><span class="keyword"> operator</span><span class="operator"> &lt;&lt; (</span>ostream<span class="operator">&amp;</span> out<span class="operator">,</span><span class="keyword"> const</span> BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;&amp;</span> t$<span class="flow">
+              return</span> out<span class="operator"> &lt;&lt;</span> tree<span class="operator">.</span>toString<span class="operator">();
+}</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+void</span> BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> insertNode<span class="operator">(</span>NODETYPE<span class="operator"> &amp;</span> insertValue<span class="operator">) {</span><span class="flow">
+
+       if</span><span class="operator"> (</span><span class="keyword">this</span><span class="operator"> -&gt;</span> root<span class="operator"> ==</span> NULL<span class="operator">)</span><span class="keyword">
+          this</span><span class="operator"> -&gt;</span> root<span class="operator"> =</span><span class="keyword"> new</span> Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; (</span>insertValue<span class="operator">);</span><span class="flow">
+       else</span><span class="keyword">
+          this</span><span class="operator"> -&gt;</span> root<span class="operator"> -&gt;</span> insert<span class="operator">(</span>insertValue<span class="operator">);
+}</span><span class="keyword">
+
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> getRightTree<span class="operator">() {</span><span class="flow">
+
+   if</span><span class="operator"> (</span><span class="keyword">this</span><span class="operator"> -&gt;</span> root<span class="operator"> !=</span> NULL<span class="operator">  &amp;&amp;</span><span class="keyword">
+       this</span><span class="operator"> -&gt;</span> root<span class="operator"> -&gt;</span> rightNode<span class="operator"> !=</span> NULL<span class="operator">)</span><span class="flow">
+        return</span><span class="operator"> (</span><span class="keyword">new</span> BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; (</span><span class="keyword">this</span><span class="operator">-&gt;</span>root<span class="operator">-&gt;</span>rightNode<span class="operator">));</span><span class="flow">
+   else
+         return</span> NULL<span class="operator">;
+}</span><span class="keyword">
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> getLeftTree<span class="operator">() {</span><span class="flow">
+
+   if</span><span class="operator"> (</span><span class="keyword">this</span><span class="operator"> -&gt;</span> root<span class="operator"> !=</span> NULL<span class="operator">  &amp;&amp;</span><span class="keyword">
+       this</span><span class="operator"> -&gt;</span> root<span class="operator"> -&gt;</span> leftNode<span class="operator"> !=</span> NULL<span class="operator">)</span><span class="flow">
+        return</span><span class="operator"> (</span><span class="keyword">new</span> BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; (</span><span class="keyword">this</span><span class="operator">-&gt;</span>root<span class="operator">-&gt;</span>leftNode<span class="operator">));</span><span class="flow">
+   else
+         return</span> NULL<span class="operator">;
+}</span><span class="keyword">
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+string  BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span>
+       getInOrderTraversal<span class="operator">(</span>BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>tree<span class="operator">) {</span><span class="flow">
+
+   if</span><span class="operator"> (</span>tree<span class="operator"> ==</span> NULL<span class="operator">)</span><span class="flow">
+      return</span><span class="string"> ""</span><span class="operator">;</span><span class="flow">
+   else return</span><span class="operator">(</span>getInOrderTraversal<span class="operator">(</span>tree<span class="operator"> -&gt;</span> getLeftTree<span class="operator">()) +</span>
+               tree<span class="operator"> -&gt;</span> root<span class="operator"> -&gt;</span> toString<span class="operator">() +</span><span class="string"> " "</span><span class="operator">+</span>  
+               getInOrderTraversal<span class="operator">(</span>tree<span class="operator"> -&gt;</span> getRightTree<span class="operator">())); 
+
+}</span><span class="keyword">
+
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+bool</span>  BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span>insert<span class="operator">(</span> NODETYPE<span class="operator">&amp;</span> item<span class="operator">) {</span><span class="flow">
+return</span> insert<span class="operator">(</span><span class="keyword">this</span><span class="operator"> -&gt;</span> root<span class="operator">,</span> item<span class="operator">);
+}</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+bool</span>  BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; ::</span>insert<span class="operator">(</span>Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;*&amp;</span> local_root<span class="operator">,</span>  NODETYPE<span class="operator">&amp;</span> $<span class="flow">
+if</span><span class="operator">(</span> local_root<span class="operator"> ==</span> NULL<span class="operator">) {</span>
+ local_root<span class="operator"> =</span><span class="keyword"> new</span> Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; (</span>item<span class="operator">);</span><span class="flow">
+  return</span><span class="bool"> true</span><span class="operator">;
+ }</span><span class="flow">
+
+else</span><span class="operator"> {</span><span class="flow">
+  if</span><span class="operator"> (</span>item<span class="operator"> &lt;</span> local_root<span class="operator"> -&gt;</span> data<span class="operator">)</span><span class="flow">
+  return</span> insert<span class="operator">(</span>local_root<span class="operator"> -&gt;</span> leftNode<span class="operator">,</span> item<span class="operator">);</span><span class="flow">
+  else if</span><span class="operator"> (</span>local_root<span class="operator"> -&gt;</span> data<span class="operator"> &lt;</span> item<span class="operator">)</span><span class="flow">
+  return</span> insert<span class="operator">(</span>local_root<span class="operator">-&gt;</span>rightNode<span class="operator">,</span> item<span class="operator">);</span><span class="flow">
+else</span><span class="operator"> {</span><span class="flow">
+  return</span><span class="bool"> false</span><span class="operator">;
+}}}</span><span class="keyword">
+
+
+
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+NODETYPE<span class="operator">*</span> BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; ::</span>find<span class="operator">(</span>NODETYPE<span class="operator">&amp;</span> target<span class="operator">) {</span><span class="flow">
+         return</span> find<span class="operator">(</span><span class="keyword">this</span><span class="operator"> -&gt;</span> root<span class="operator">,</span> target<span class="operator">);
+}</span><span class="keyword">
+
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+NODETYPE<span class="operator">*</span> BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span>find<span class="operator">(</span> Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;*</span> local_root<span class="operator">,</span> NODETYPE<span class="operator">&amp;</span> $<span class="flow">
+
+  if</span><span class="operator"> (</span>local_root<span class="operator"> ==</span> NULL<span class="operator">)</span><span class="flow">
+        return</span> NULL<span class="operator">;</span><span class="flow">
+  if</span><span class="operator"> (</span>target<span class="operator"> &lt;</span> local_root<span class="operator">-&gt;</span>data<span class="operator">)</span><span class="flow">
+        return</span> find<span class="operator">(</span>local_root<span class="operator"> -&gt;</span>leftNode<span class="operator">,</span> target<span class="operator">);</span><span class="flow">
+  else if</span><span class="operator"> (</span>local_root<span class="operator">-&gt;</span>data<span class="operator"> &lt;</span> target<span class="operator">)</span><span class="flow">
+        return</span> find<span class="operator">(</span>local_root<span class="operator">-&gt;</span>rightNode<span class="operator">,</span> target<span class="operator">);</span><span class="flow">
+  else
+        return</span><span class="operator"> &amp;(</span>local_root<span class="operator">-&gt;</span>data<span class="operator">);
+}</span><span class="pre">
+
+#endif
+</span></pre>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="nodeH">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">
+                  <span class="pre">
+#ifndef NODE_H
+#define NODE_H
+
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span><span class="keyword">
+
+template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="keyword"> class</span> BinarySearchTree<span class="operator">;</span><span class="keyword">
+
+template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="keyword">
+class</span> Node<span class="operator">{</span><span class="keyword">
+     friend class</span> BinarySearchTree<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;;</span><span class="keyword">
+
+     public</span><span class="operator">:</span>
+        Node<span class="operator">(</span>NODETYPE<span class="operator">  &amp;);
+        ~</span>Node<span class="operator">();</span><span class="type">
+        void</span> insert<span class="operator">(</span>NODETYPE<span class="operator"> &amp;);</span>
+        string toString<span class="operator">();</span><span class="comment">
+        //bool search (string value);
+</span><span class="keyword">        
+     private</span><span class="operator">:</span>
+        NODETYPE data<span class="operator">;</span>
+        Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>leftNode<span class="operator">;</span>
+        Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; *</span>rightNode<span class="operator">;
+
+};</span><span class="comment">
+
+// Constructor of class Node
+</span><span class="keyword">template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> Node<span class="operator">(</span>NODETYPE<span class="operator"> &amp;</span> newData<span class="operator">) {</span>
+       data<span class="operator"> =</span> newData<span class="operator">;</span>
+       leftNode<span class="operator"> =</span> rightNode<span class="operator"> =</span> NULL<span class="operator">;
+
+}</span><span class="comment">
+
+// Function insert
+</span><span class="keyword">template</span><span class="operator">&lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span><span class="type">
+void</span> Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> insert<span class="operator">(</span>NODETYPE<span class="operator"> &amp;</span>newData<span class="operator">) {</span><span class="flow">
+
+        if</span><span class="operator"> (</span>newData<span class="operator"> &lt;</span> data<span class="operator">) {</span><span class="flow">
+           if</span><span class="operator"> (</span>leftNode<span class="operator"> ==</span> NULL<span class="operator">)</span>
+              leftNode<span class="operator"> =</span><span class="keyword"> new</span> Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;(</span>newData<span class="operator">);</span><span class="flow">
+           else</span>
+               leftNode<span class="operator"> -&gt;</span> insert<span class="operator">(</span>newData<span class="operator">);
+        }</span><span class="flow">
+        else if</span><span class="operator"> (</span>newData<span class="operator"> &gt;</span> data<span class="operator">) {</span><span class="flow">
+           if</span><span class="operator"> (</span>rightNode<span class="operator"> ==</span> NULL<span class="operator">)</span>
+              rightNode<span class="operator"> =</span><span class="keyword"> new</span> Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt; (</span>newData<span class="operator">);</span><span class="flow">
+           else</span> rightNode<span class="operator"> -&gt;</span> insert<span class="operator">(</span>newData<span class="operator">);
+        }
+}</span><span class="comment">
+
+// toString: convert the data label to string
+</span><span class="keyword">template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+string Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;::</span> toString<span class="operator">() {</span>
+
+    ostringstream os<span class="operator">;</span>
+
+    os<span class="operator"> &lt;&lt;</span> data<span class="operator">;</span><span class="flow">
+    return</span> os<span class="operator">.</span>str<span class="operator">();
+}</span><span class="comment">
+
+
+// Destructor of Node class
+</span><span class="keyword">template</span><span class="operator"> &lt;</span><span class="keyword">typename</span> NODETYPE<span class="operator">&gt;</span>
+Node<span class="operator">&lt;</span>NODETYPE<span class="operator">&gt;:: ~</span>Node<span class="operator">() {</span><span class="flow">
+
+    if</span><span class="operator"> (</span>leftNode<span class="operator"> !=</span> NULL<span class="operator">)</span><span class="keyword">
+                delete</span> leftNode<span class="operator">;</span><span class="flow">
+    if</span><span class="operator"> (</span>rightNode<span class="operator"> !=</span> NULL<span class="operator">)</span><span class="keyword">
+                delete</span> rightNode<span class="operator">;
+
+}</span><span class="pre">
+
+#endif
+</span></pre>
+
+                  </div>
+                  
+                  
+                  
+                   <div class="tab-pane fade" id="BSTMainCPP">
+                   <pre class="prettyprint cpp"><span class="pre">#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;string&gt;
+#include "Node.h"
+#include "BinarySearchTree.h"
+#include  &lt;algorithm&gt;
+#include &lt;locale&gt;
+#include &lt;ios&gt;
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span><span class="type">
+
+int</span><span class="keyword"> main</span><span class="operator">() {</span><span class="comment">
+// Creating BST
+</span>BinarySearchTree<span class="operator">&lt;</span>string<span class="operator">&gt; *</span>tree<span class="operator"> =</span><span class="keyword"> new</span> BinarySearchTree<span class="operator">&lt;</span>string<span class="operator">&gt;();</span>
+
+
+string line<span class="operator">;</span>
+std<span class="operator">::</span>size_t found<span class="operator"> =</span> line<span class="operator">.</span>find<span class="operator">(</span><span class="char">'#'</span><span class="operator">);</span><span class="comment">
+
+// Opening Text File/ Reading Text File
+</span>
+ifstream file<span class="operator">(</span><span class="string">"100hashtags.txt"</span><span class="operator">);</span><span class="flow">
+if</span><span class="operator"> (</span>file<span class="operator">.</span>is_open<span class="operator">())
+  {</span>
+    cout<span class="operator"> &lt;&lt;</span> endl<span class="operator">&lt;&lt;</span><span class="string"> " File has been opened... getting hashtags"</span><span class="operator"> &lt;&lt;</span> endl<span class="operator">;</span><span class="comment">
+        //Inserting Nodes
+</span><span class="flow">    while</span><span class="operator">(</span>getline<span class="operator">(</span>file<span class="operator">,</span>line<span class="operator">))
+      {</span>
+        found<span class="operator"> =</span> line<span class="operator">.</span>find<span class="operator">(</span><span class="char">' '</span><span class="operator">);</span>
+        line<span class="operator">.</span>erase<span class="operator">(</span><span class="int">0</span><span class="operator">,</span> found<span class="operator">+</span><span class="int">1</span><span class="operator">);</span><span class="comment">
+        //cout &lt;&lt; line &lt;&lt; endl;
+</span>        tree<span class="operator"> -&gt;</span> insertNode<span class="operator">(</span>line<span class="operator">);
+
+
+      }</span>
+        file<span class="operator">.</span>close<span class="operator">();
+  }</span><span class="comment">
+
+// Declerations 
+</span><span class="type">int</span> counter<span class="operator"> =</span><span class="int">0</span><span class="operator">;</span>
+string tweetArray<span class="operator">[</span><span class="int">20</span><span class="operator">];</span>
+string tweet<span class="operator">;</span>
+string hashtag<span class="operator">;</span>
+string search<span class="operator">;</span><span class="comment">
+
+// User Input
+</span>cout<span class="operator">&lt;&lt;</span><span class="string"> "Please enter a tweet: "</span><span class="operator">;</span>
+getline<span class="operator">(</span>cin<span class="operator">,</span> tweet<span class="operator">);</span>
+string print<span class="operator">;</span><span class="comment">
+
+
+
+// Finding tweets from string the user made
+</span>search<span class="operator"> =</span><span class="char"> '#'</span><span class="operator">;</span><span class="type">
+int</span> pos<span class="operator"> =</span> tweet<span class="operator">.</span>find<span class="operator">(</span>search<span class="operator">,</span><span class="int"> 0</span><span class="operator">);</span><span class="flow">
+while</span><span class="operator"> (</span>pos<span class="operator">!=</span>string<span class="operator">::</span>npos<span class="operator">) {</span>
+string hashRest<span class="operator"> =</span> tweet<span class="operator">.</span>substr<span class="operator">(</span>pos<span class="operator">);</span>
+std<span class="operator">::</span>size_t space<span class="operator"> =</span> hashRest<span class="operator">.</span>find<span class="operator">(</span><span class="char">' '</span><span class="operator">);</span>
+tweetArray<span class="operator">[</span>counter<span class="operator">].</span>assign<span class="operator">(</span>tweet<span class="operator">,</span> pos<span class="operator">,</span> space<span class="operator">);</span>
+pos<span class="operator"> =</span> tweet<span class="operator">.</span>find<span class="operator">(</span>search<span class="operator">,</span> pos<span class="operator">+</span><span class="int">1</span><span class="operator">);</span>
+ 
+counter<span class="operator">++;
+}
+}</span><span class="comment">
+
+// Matching tweets with BST and printing outcome
+</span>cout<span class="operator"> &lt;&lt;</span> endl<span class="operator">;</span><span class="type">
+int</span> i<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="flow">
+while</span><span class="operator"> (</span>i<span class="operator"> &lt;</span> counter<span class="operator">){</span><span class="flow">
+if</span><span class="operator"> (</span>tree<span class="operator"> -&gt;</span>find<span class="operator">(</span>tweetArray<span class="operator">[</span>i<span class="operator">])){</span>
+cout<span class="operator"> &lt;&lt;</span><span class="string"> "1: "</span><span class="operator">&lt;&lt;</span> tweetArray<span class="operator">[</span>i<span class="operator">]&lt;&lt;</span> endl<span class="operator">;</span>
+i<span class="operator">++;
+}</span><span class="flow">
+else</span><span class="operator">{</span> 
+cout<span class="operator"> &lt;&lt;</span><span class="int"> 0</span><span class="operator">&lt;&lt;</span><span class="string">": "</span><span class="operator">&lt;&lt;</span> tweetArray<span class="operator">[</span>i<span class="operator">]&lt;&lt;</span> endl<span class="operator">;</span>
+i<span class="operator">++;
+}
+}
+
+}</span>
+
+
+
+
+
+
+</pre>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="100hashTags">
+                   <pre class="prettyprint cpp"> <pre><span class="int">1</span><span class="operator">,</span> #yapbozmeb<span class="int">
+2</span><span class="operator">,</span> #gameinsight<span class="int">
+3</span><span class="operator">,</span> #android<span class="int">
+4</span><span class="operator">,</span> #rt<span class="int">
+5</span><span class="operator">,</span> #premiosgoya<span class="int">
+6</span><span class="operator">,</span> #androidgames<span class="int">
+7</span><span class="operator">,</span> #goya2014<span class="int">
+8</span><span class="operator">,</span> #ipad<span class="int">
+9</span><span class="operator">,</span> #ipadgames<span class="int">
+10</span><span class="operator">,</span> #birnesilgeliyor<span class="int">
+11</span><span class="operator">,</span> #wearethepeople<span class="int">
+12</span><span class="operator">,</span> #retweet<span class="int">
+13</span><span class="operator">,</span> #mentionyourfaves<span class="int">
+14</span><span class="operator">,</span> #teamfollowback<span class="int">
+15</span><span class="operator">,</span> #fcblive<span class="int">
+16</span><span class="operator">,</span> #joeygraceffa<span class="int">
+17</span><span class="operator">,</span> #followback<span class="int">
+18</span><span class="operator">,</span> #iphone<span class="int">
+19</span><span class="operator">,</span> #sochi2014<span class="int">
+20</span><span class="operator">,</span> #asmpsg<span class="int">
+21</span><span class="operator">,</span> #sougofollow<span class="int">
+22</span><span class="operator">,</span> #iphonegames<span class="int">
+23</span><span class="operator">,</span> #nowplaying<span class="int">
+24</span><span class="operator">,</span> #yapbozcemaat<span class="int">
+25</span><span class="operator">,</span> #tfbjp<span class="int">
+26</span><span class="operator">,</span> #np<span class="int">
+27</span><span class="operator">,</span> #thewalkingdead<span class="int">
+28</span><span class="operator">,</span> #copaacb<span class="int">
+29</span><span class="operator">,</span> #follow<span class="int">
+30</span><span class="operator">,</span> #puertoricowants1d<span class="int">
+31</span><span class="operator">,</span> #neonlightstour<span class="int">
+32</span><span class="operator">,</span> #love<span class="int">
+33</span><span class="operator">,</span> #lrt<span class="int">
+34</span><span class="operator">,</span> #followme<span class="int">
+35</span><span class="operator">,</span> #halamadrid<span class="int">
+36</span><span class="operator">,</span> #followpyramid<span class="int">
+37</span><span class="operator">,</span> #follow2befollowed<span class="int">
+38</span><span class="operator">,</span> #12f<span class="int">
+39</span><span class="operator">,</span> #ff<span class="int">
+40</span><span class="operator">,</span> #followtrick<span class="int">
+41</span><span class="operator">,</span> #factorxsic<span class="int">
+42</span><span class="operator">,</span> #win<span class="int">
+43</span><span class="operator">,</span> #music<span class="int">
+44</span><span class="operator">,</span> #mejorcuerpo2014<span class="int">
+45</span><span class="operator">,</span> #tuitutil<span class="int">
+46</span><span class="operator">,</span> #quran<span class="int">
+47</span><span class="operator">,</span> #roboalsevilla<span class="int">
+48</span><span class="operator">,</span> #ggmu<span class="int">
+49</span><span class="operator">,</span> #countkun<span class="int">
+50</span><span class="operator">,</span> #faceofmlb<span class="int">
+51</span><span class="operator">,</span> #releasebapuji<span class="int">
+52</span><span class="operator">,</span> #goyartve<span class="int">
+53</span><span class="operator">,</span> #followmejp<span class="int">
+54</span><span class="operator">,</span> #tfb<span class="int">
+55</span><span class="operator">,</span> #braccialettirossi<span class="int">
+56</span><span class="operator">,</span> #lt<span class="int">
+57</span><span class="operator">,</span> #mufc<span class="int">
+58</span><span class="operator">,</span> #sex<span class="int">
+59</span><span class="operator">,</span> #ksa<span class="int">
+60</span><span class="operator">,</span> #siguemeytesigo<span class="int">
+61</span><span class="operator">,</span> #aries<span class="int">
+62</span><span class="operator">,</span> #canaksoy<span class="int">
+63</span><span class="operator">,</span> #freeiraniansoldiers<span class="int">
+64</span><span class="operator">,</span> #porn<span class="int">
+65</span><span class="operator">,</span> #maguibravi<span class="int">
+66</span><span class="operator">,</span> #flappybird<span class="int">
+67</span><span class="operator">,</span> #off<span class="int">
+68</span><span class="operator">,</span> #hadith<span class="int">
+69</span><span class="operator">,</span> #oyunoynarken<span class="int">
+70</span><span class="operator">,</span> #venezuela<span class="int">
+71</span><span class="operator">,</span> #job<span class="int">
+72</span><span class="operator">,</span> #ligabbva<span class="int">
+73</span><span class="operator">,</span> #bahrain<span class="int">
+74</span><span class="operator">,</span> #conceptfollowspree<span class="int">
+75</span><span class="operator">,</span> #stadyumyorum<span class="int">
+76</span><span class="operator">,</span> #paulgoldschmidt<span class="int">
+77</span><span class="operator">,</span> #nyfw<span class="int">
+78</span><span class="operator">,</span> #news<span class="int">
+79</span><span class="operator">,</span> #openfollow<span class="int">
+80</span><span class="operator">,</span> #500aday<span class="int">
+81</span><span class="operator">,</span> #oomf<span class="int">
+82</span><span class="operator">,</span> #ganaseguidores<span class="int">
+83</span><span class="operator">,</span> #asksamcallahan<span class="int">
+84</span><span class="operator">,</span> #topgear<span class="int">
+85</span><span class="operator">,</span> #bot<span class="int">
+86</span><span class="operator">,</span> #video<span class="int">
+87</span><span class="operator">,</span> #tcot<span class="int">
+88</span><span class="operator">,</span> #exarushers<span class="int">
+89</span><span class="operator">,</span> #neonlightstourtoday<span class="int">
+90</span><span class="operator">,</span> #taurus<span class="int">
+91</span><span class="operator">,</span> #rulzofficial<span class="int">
+92</span><span class="operator">,</span> #lilianourduo2014<span class="int">
+93</span><span class="operator">,</span> #sochi<span class="int">
+94</span><span class="operator">,</span> #jobs<span class="int">
+95</span><span class="operator">,</span> #rakutenichiba<span class="int">
+96</span><span class="operator">,</span> #free<span class="int">
+97</span><span class="operator">,</span> #giveaway<span class="int">
+98</span><span class="operator">,</span> #fightmatch<span class="int">
+99</span><span class="operator">,</span> #twacronym<span class="int">
+100</span><span class="operator">,</span> #cancer</pre>
+
+</pre></div></pre></div></span>
+    </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+   <!-- Modal BST Project --------------------------------------------->
+  <div id="modalHashMap" class="modal fade" role="dialog">
+    <div class="modal-dialog-md"> 
+      
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="container">
+            <div class="page-header">
+              <h1>Hash Map<span class="pull-right label label-default"></span></h1>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+              <div class="panel with-nav-tabs panel-default">
+              <div class="panel-heading">
+              <ul class="nav nav-tabs">
+              <li class="active">
+              <button href="#aboutHashMap" data-toggle="tab">
+              About This Program</a>
+              </li>
+              <li>
+              <button href="#liveDemoHashMap" data-toggle="tab">
+              Live Demo</a></li>
+              <li class="dropdown"> 
+              <a href="#" data-toggle="dropdown">Source Code <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+              <li>
+              <button href="#TwitterH" data-toggle="tab">
+              main.cpp</a>
+              </li>
+              <li>
+              <button href="#mainHashMapCPP" data-toggle="tab">
+              Twitter.h</a>
+              </li>
+               </ul>
+              </div>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="aboutHashMap">
+                    <p>Enter in a keyword and this program will use a hash map to find all popular tweets associated with it.</p>
+                    <p>The source code contains the following concepts<p>
+                    <li>Reading from a text file</li>
+                    <li>String mutation</li>
+                    <li>Nodes</li> 
+                    <li>Binary Search Tree</li>
+                    
+                    
+                    
+                  </div>
+                  <div class="tab-pane fade" id="liveDemo">Default 2</div>
+                  <div class="tab-pane fade" id="liveDemoHashMap">
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+                      <video autoplay loop class="embed-responsive-item">
+                        <source src=videos/HashMap.mp4 type=video/mp4>
+                      </video>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="TwitterH">
+                   <pre class="prettyprint cpp"> <span class="pre">
+#include &lt;iostream&gt;
+#include &lt;ext/hash_map&gt;
+#include &lt;string&gt;
+#include &lt;fstream&gt;
+#include &lt;sstream&gt;
+#include &lt;ios&gt;
+#include "Twitter.h"
+#include &lt;vector&gt;
+</span><span class="keyword">
+
+using namespace</span> std<span class="operator">;</span><span class="keyword">
+using</span> __gnu_cxx<span class="operator">::</span> hash_map<span class="operator">;</span><span class="type">
+
+int</span><span class="keyword"> main</span><span class="operator">() {</span><span class="comment">
+
+// Intilizations
+</span>string buffer<span class="operator">;</span>
+string pop<span class="operator">;</span>
+string id<span class="operator">;</span>
+string keyword<span class="operator">;</span>
+string user<span class="operator">;</span>
+string tweet<span class="operator">;</span><span class="type">
+int</span> x<span class="operator"> =</span><span class="int"> 1</span><span class="operator">;</span><span class="type">
+int</span> i<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span>
+
+
+vector<span class="operator">&lt;</span>Twitter<span class="operator">* &gt;</span> myTwitter<span class="operator">(</span><span class="int">2397</span><span class="operator">);</span>
+hash_map<span class="operator"> &lt;</span><span class="type">int</span><span class="operator">,</span> Twitter<span class="operator">*&gt;</span> twitterHashMap<span class="operator">;</span><span class="comment">
+
+
+// opening File
+</span>ifstream file<span class="operator">(</span><span class="string">"project4.csv"</span><span class="operator">);</span><span class="flow">
+if</span><span class="operator"> (!</span>file<span class="operator">)
+{</span>
+cout<span class="operator"> &lt;&lt;</span><span class="string"> "Twitter File Could Not Be Opened"</span><span class="operator"> &lt;&lt;</span>endl<span class="operator">;
+}</span><span class="flow">
+
+if</span><span class="operator"> (</span>file<span class="operator">.</span>is_open<span class="operator">())
+ {</span><span class="flow">
+
+while</span><span class="operator"> (</span>file<span class="operator">.</span>good<span class="operator">() !=</span><span class="bool"> false</span><span class="operator">){</span><span class="comment">
+//Tokenizing File 
+</span>  getline<span class="operator">(</span>file<span class="operator">,</span> buffer<span class="operator">);</span>
+
+  istringstream iss<span class="operator">(</span>buffer<span class="operator">);</span>
+  getline<span class="operator">(</span>iss<span class="operator">,</span> pop<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span>
+  getline<span class="operator">(</span>iss<span class="operator">,</span> id<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span>
+  getline<span class="operator">(</span>iss<span class="operator">,</span> keyword<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span>
+  getline<span class="operator">(</span>iss<span class="operator">,</span> user<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span>
+  getline<span class="operator">(</span>iss<span class="operator">,</span> tweet<span class="operator">,</span><span class="char"> ','</span><span class="operator">);</span><span class="comment">
+  
+// Convert from string to int
+</span><span class="type">  int</span> popInt<span class="operator"> =</span> atoi<span class="operator">(</span>pop<span class="operator">.</span>c_str<span class="operator">());</span><span class="type">
+  int</span> idInt<span class="operator"> =</span> atoi<span class="operator">(</span>id<span class="operator">.</span>c_str<span class="operator">());</span><span class="comment">
+
+// Creating new twitter Obj for each tweet in File
+</span> myTwitter<span class="operator">[</span>i<span class="operator">] =</span><span class="keyword"> new</span>  Twitter<span class="operator">(</span>popInt<span class="operator">,</span> idInt<span class="operator">,</span> keyword<span class="operator">,</span> user<span class="operator">,</span> tweet<span class="operator">);</span><span class="comment">
+// Inserting into Hash Map
+</span> twitterHashMap<span class="operator">.</span>insert<span class="operator">(</span>pair<span class="operator">&lt;</span><span class="type">int</span><span class="operator">,</span> Twitter<span class="operator">*&gt; (</span>x<span class="operator">,</span> myTwitter<span class="operator">[</span>i<span class="operator">]));</span>
+x<span class="operator">++;</span>
+i<span class="operator">++;
+
+}</span><span class="comment">
+
+// Asking for user input
+</span>cout<span class="operator"> &lt;&lt;</span><span class="string"> "Please enter keyword to search: "</span><span class="operator">;</span>
+string input<span class="operator">;</span>
+getline<span class="operator">(</span>cin<span class="operator">,</span> input<span class="operator">);</span><span class="comment">
+
+//hash map iterator
+</span>hash_map<span class="operator">&lt;</span><span class="type">int</span><span class="operator">,</span> Twitter<span class="operator"> *&gt; ::</span> iterator itr<span class="operator">;</span><span class="comment"> 
+
+// Searching for keyword
+</span><span class="flow">for</span><span class="operator"> (</span>itr<span class="operator"> =</span> twitterHashMap<span class="operator">.</span>begin<span class="operator">();</span> itr<span class="operator"> !=</span> twitterHashMap<span class="operator">.</span>end<span class="operator">();</span> itr<span class="operator">++){</span><span class="flow">
+ if</span><span class="operator">  ((</span>itr<span class="operator"> -&gt;</span> second<span class="operator">) -&gt;</span> getKeyword<span class="operator">() ==</span> input<span class="operator">){</span>
+   
+   cout<span class="operator"> &lt;&lt; (</span>itr<span class="operator"> -&gt;</span> second<span class="operator">) -&gt;</span> getPop<span class="operator">() &lt;&lt;</span><span class="string"> " "</span><span class="operator"> &lt;&lt; (</span>itr<span class="operator"> -&gt;</span> second<span class="operator">) -&gt;</span> getId<span class="operator">() &lt;&lt;</span><span class="string"> " "</span><span class="operator">
+   &lt;&lt; (</span>itr<span class="operator"> -&gt;</span> second<span class="operator">) -&gt;</span> getKeyword<span class="operator">() &lt;&lt;</span><span class="string"> " "</span><span class="operator"> &lt;&lt; (</span>itr<span class="operator"> -&gt;</span> second<span class="operator">) -&gt;</span> getUser<span class="operator">() &lt;&lt;</span><span class="string"> " $
+ }
+ //else cout &lt;&lt; "</span>Not Found<span class="string"> " &lt;&lt; endl;
+
+}
+ 
+ }
+
+}
+</span></pre>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="mainHashMapCPP">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">
+#ifndef TWITTER_H
+#define TWITTER_H
+
+#include &lt;iostream&gt;
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span><span class="keyword">
+
+class</span> Twitter<span class="operator"> {</span><span class="keyword">
+
+        public</span><span class="operator">:</span>
+        Twitter<span class="operator">(){</span> pop<span class="operator"> =</span><span class="int"> 0</span><span class="operator">;</span> id<span class="operator">=</span><span class="int">0</span><span class="operator">;</span>keyword<span class="operator"> =</span><span class="string">""</span><span class="operator">;</span> user<span class="operator"> =</span><span class="string">""</span><span class="operator">;</span> tweet<span class="operator"> =</span><span class="string">""</span><span class="operator">;}</span> 
+
+        Twitter<span class="operator">(</span><span class="type">int</span> pop<span class="operator">,</span><span class="type"> int</span> id<span class="operator">,</span> string keyword<span class="operator">,</span> string user<span class="operator">,</span> string tweet<span class="operator">){</span><span class="keyword">
+                this</span><span class="operator"> -&gt;</span> pop<span class="operator"> =</span> pop<span class="operator">;</span><span class="keyword">
+                this</span><span class="operator"> -&gt;</span>  id<span class="operator"> =</span> id<span class="operator">;</span><span class="keyword">
+                this</span><span class="operator"> -&gt;</span>  keyword<span class="operator"> =</span> keyword<span class="operator">;</span><span class="keyword">
+                this</span><span class="operator"> -&gt;</span>  user<span class="operator"> =</span> user<span class="operator">;</span><span class="keyword">
+                this</span><span class="operator"> -&gt;</span>  tweet<span class="operator"> =</span> tweet<span class="operator">;
+        }</span><span class="type">
+
+        int</span> getPop<span class="operator">(){</span><span class="flow">return</span> pop<span class="operator">;};</span><span class="type">
+        int</span> getId<span class="operator">(){</span><span class="flow">return</span> id<span class="operator">;};</span>
+        string getKeyword<span class="operator">(){</span><span class="flow">return</span> keyword<span class="operator">;};</span>
+        string getUser<span class="operator">(){</span><span class="flow">return</span> user<span class="operator">;};</span>
+        string getTweet<span class="operator">(){</span><span class="flow">return</span> tweet<span class="operator">;};</span><span class="keyword">
+
+        private</span><span class="operator">:</span><span class="type">
+                int</span> pop<span class="operator">;</span><span class="type">
+                int</span> id<span class="operator">;</span>
+                string keyword<span class="operator">;</span>
+                string user<span class="operator">;</span>
+                string tweet<span class="operator">;
+};</span><span class="pre">
+
+#endif
+</span>
+</pre>
+
+                  </div>
+                  
+                  
+                  
+                   
+</pre></div></pre></div></span>
+    </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div 
+    
+   
+   
+   
+   
+    ><!-- Modal Resume -->
+    <div id="modalResume" class="modal fade" role="dialog">
+      <div class="modal-dialog"> 
+        
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+
+ 
+
+
+
+<!-- Modal Package Project -->
+  <div id="modalPackage" class="modal fade" role="dialog">
+    <div class="modal-dialog-md"> 
+      
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="container">
+            <div class="page-header">
+              <h1>Polymorphism / Inheritance / String Tokenization<span class="pull-right label label-default"></span></h1>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+              <div class="panel with-nav-tabs panel-default">
+              <div class="panel-heading">
+              <ul class="nav nav-tabs">
+              <li class="active">
+              <button href="#aboutPackage" data-toggle="tab">
+              About This Program</a>
+              </li>
+              <li>
+              <button href="#liveDemoPackage" data-toggle="tab">
+              Live Demo</a></li>
+              <li class="dropdown"> 
+              <a href="#" data-toggle="dropdown">Source Code <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+              <li>
+              <button href="#packageH" data-toggle="tab">
+              package.h</a>
+              </li>
+              <li>
+              <button href="#twoDayPackageH" data-toggle="tab">
+              twoDayPackage.h</a>
+              </li>
+              <li>
+              <button href="#overnightPackageH" data-toggle="tab">
+              overnightPackage.h</a>
+              </li>
+              <li class="divider"></li>
+              <button href="#packageMainCPP" data-toggle="tab">
+              main.cpp</a>
+              <li>
+              <button href="#packageCPP" data-toggle="tab">
+              package.cpp</a>
+              </li>
+              <li>
+              <button href="#twoDayPackageCPP" data-toggle="tab">
+              twoDayPackage.cpp</a>
+               </li>
+               <li>
+              <button href="#overnightPackageCPP" data-toggle="tab">
+              overnightPackage.cpp</a>
+              </ul>
+              </div>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="aboutPackage">
+                    <p>This program reads a text file that contains package and shipping information for a shipping company. It then uses polymorphisim to create the apropriate "Package" object. It then calculates the number of overnight, two day, and regular packages that have been shipped. It also calculates the total revenue of each shipping method.</p>
+                     The source code contains the following programming concepts:</p>
+                   <p><li>Reading from a text file</li>
+                    <li>String Tokenization</li>
+                    <li>Vectors</li> 
+                    <li>Polymorphism / Inheritance</li>
+                    <li>Dynamic Casts </li>
+                    <li>Virtual Functions </li></p> 
+                   </div>
+                  <div class="tab-pane fade" id="liveDemo">Default 2</div>
+                  <div class="tab-pane fade" id="liveDemoPackage">
+                    <div align="center" class="embed-responsive embed-responsive-16by9">
+                      <video autoplay loop class="embed-responsive-item">
+                        <source src=videos/Package.mp4 type=video/mp4>
+                      </video>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="twoDayPackageH">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">
+#ifndef TwoDayPackage_H
+#define TwoDayPackage_H
+
+#include <string>
+#include "Package.h"
+
+using namespace std;
+
+
+class TwoDayPackage: public Package{
+
+public:
+    TwoDayPackage(const string &, const string &, const string &, const string &, double=0, double=0, double=0);
+    void setFlatFee(double);
+    double getFlatFee() const;
+    double calculate() const;
+    virtual void print() const;
+    
+private:
+    double flatFee;
+
+    
+    
+};
+
+
+
+#endif
+                  </div>
+                  
+                  
+                 
+                 
+                  <div class="tab-pane fade" id="overnightPackageCPP">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">
+<span class="pre">#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include "OvernightPackage.h"
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span>
+
+OvernightPackage<span class="operator">::</span>OvernightPackage<span class="operator">(</span>string<span class="keyword"> const</span><span class="operator"> &amp;</span>senderName<span class="operator">,</span> string<span class="keyword"> const</span><span class="operator"> &amp;</span>senderAddress<span class="operator">,</span> string<span class="keyword"> const</span><span class="operator"> &amp;</span>recipientNa$<span class="operator">
+
+:</span> Package<span class="operator">(</span>senderName<span class="operator">,</span> senderAddress<span class="operator">,</span> recipientName<span class="operator">,</span> recipientAddress<span class="operator">,</span> w<span class="operator">,</span> cpo<span class="operator">)
+
+{</span>
+    setFeePerOunce<span class="operator">(</span>fpo<span class="operator">);
+}</span><span class="type">
+
+void</span> OvernightPackage<span class="operator">::</span>setFeePerOunce<span class="operator">(</span><span class="type">double</span> fpo<span class="operator">)
+{</span>
+    FeePerOunce<span class="operator"> =</span> fpo<span class="operator">;
+}</span><span class="type">
+
+double</span> OvernightPackage<span class="operator">::</span> getFeePerOunce<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="flow">
+    return</span> FeePerOunce<span class="operator">;
+}</span><span class="type">
+
+double</span> OvernightPackage<span class="operator">::</span> calculate<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="comment">
+   // cout &lt;&lt;(getCPO() * getFeePerOunce()) + (getWeight() * getCPO());
+</span><span class="flow">    return</span><span class="operator"> (</span>getCPO<span class="operator">() *</span> getFeePerOunce<span class="operator">()) + (</span>getWeight<span class="operator">() *</span> getCPO<span class="operator">());
+}</span><span class="type">
+
+void</span> OvernightPackage<span class="operator">::</span>print<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span>
+    Package<span class="operator">::</span>print<span class="operator">();
+}</span></pre>
+                  </div>
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="twoDayPackageCPP">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">
+<span class="pre">#include &lt;string&gt;
+#include &lt;iostream&gt;
+
+#include "TwoDayPackage.h"
+</span><span class="keyword">
+
+using namespace</span> std<span class="operator">;</span>
+
+
+TwoDayPackage<span class="operator">::</span>TwoDayPackage<span class="operator">(</span>string<span class="keyword"> const</span><span class="operator"> &amp;</span>senderName<span class="operator">,</span> string<span class="keyword"> const</span><span class="operator"> &amp;</span>senderAddress<span class="operator">,</span> string<span class="keyword"> const</span><span class="operator"> &amp;</span>recipientName<span class="operator">,</span> st$<span class="operator">
+:</span> Package<span class="operator">(</span>senderName<span class="operator">,</span> senderAddress<span class="operator">,</span> recipientName<span class="operator">,</span> recipientAddress<span class="operator">,</span> w<span class="operator">,</span> cpo<span class="operator">)
+{</span>
+    setFlatFee<span class="operator">(</span>ff<span class="operator">);
+}</span><span class="type">
+
+void</span> TwoDayPackage<span class="operator">::</span>setFlatFee<span class="operator">(</span><span class="type">double</span> ff<span class="operator">)
+{</span>
+    flatFee<span class="operator"> =</span> ff<span class="operator">;
+}</span><span class="type">
+
+double</span> TwoDayPackage<span class="operator">::</span> getFlatFee<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="flow">
+    return</span> flatFee<span class="operator">;
+}</span><span class="type">
+
+double</span> TwoDayPackage<span class="operator">::</span> calculate<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="comment">
+  //  cout&lt;&lt; getFlatFee() + (getWeight() * getCPO());
+</span><span class="flow">    return</span> getFlatFee<span class="operator">() + (</span>getWeight<span class="operator">() *</span> getCPO<span class="operator">());
+}</span><span class="type">
+
+void</span> TwoDayPackage<span class="operator">::</span>print<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span>
+    Package<span class="operator">::</span>print<span class="operator">();
+}</span>
+</pre>
+                  </div>
+                  
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="overnightPackageCPP">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">
+
+                  </div>
+                  
+                  
+                  
+                   <div class="tab-pane fade" id="overnightPackageH">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">
+                   
+                   
+#ifndef OvernightPackage_H
+#define OvernightPackage_H
+
+#include &lt;stdio.h&gt;
+#include &lt;string&gt;
+#include "Package.h"
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span><span class="keyword">
+
+class</span> OvernightPackage<span class="operator">:</span><span class="keyword"> public</span> Package<span class="operator">{</span><span class="keyword">
+    
+public</span><span class="operator">:</span>
+    OvernightPackage<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;,</span><span class="keyword"> const</span> string<span class="operator"> &amp;,</span><span class="keyword"> const</span> string<span class="operator"> &amp;,</span><span class="keyword"> const</span> string<span class="operator"> &amp;,</span><span class="type"> double</span><span class="operator"> =</span><span class="int">0</span><span class="operator">,</span><span class="type"> double</span><span class="operator"> =</span><span class="int">0</span><span class="operator">,</span><span class="type"> double</span><span class="operator">=</span><span class="int">0</span>$<span class="type">
+    void</span> setFeePerOunce<span class="operator">(</span><span class="type">double</span><span class="operator">);</span><span class="type">
+    double</span> getFeePerOunce<span class="operator">()</span><span class="keyword"> const</span><span class="operator">;</span><span class="type">
+    double</span> calculate<span class="operator">()</span><span class="keyword"> const</span><span class="operator">;</span><span class="keyword">
+    virtual</span><span class="type"> void</span> print<span class="operator">()</span><span class="keyword"> const</span><span class="operator">;</span><span class="keyword">
+    
+private</span><span class="operator">:</span><span class="type">
+    double</span> FeePerOunce<span class="operator">;
+    
+    
+    
+    
+};</span><span class="pre">
+
+
+
+#endif </span></pre>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  <div class="tab-pane fade" id="packageH">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">#ifndef Package_H
+#define Package_H
+
+#include &lt;string&gt;
+</span><span class="keyword">
+using namespace</span> std<span class="operator">;</span><span class="keyword">
+
+
+
+class</span> Package<span class="operator">{</span><span class="keyword">
+    
+    
+    
+public</span><span class="operator">:</span>
+    
+    Package<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;,</span><span class="keyword"> const</span> string<span class="operator"> &amp;,</span><span class="keyword"> const</span> string<span class="operator"> &amp;,</span><span class="keyword"> const</span> string<span class="operator"> &amp;,</span><span class="type"> double</span><span class="operator">=</span><span class="int">0</span><span class="operator">,</span><span class="type"> double</span><span class="operator">=</span><span class="int">0</span><span class="operator">);</span><span class="type">
+    
+    
+    
+    void</span> setSenderName<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;);</span>
+    string getSenderName<span class="operator">()</span><span class="keyword"> const</span><span class="operator">;</span><span class="type">
+    
+    void</span> setSenderAddress<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;);</span>
+    string getSenderAddress<span class="operator">()</span><span class="keyword"> const</span><span class="operator">;</span><span class="type">
+    
+    void</span> setRecipientName<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;);</span>
+    string getRecipientName<span class="operator">()</span><span class="keyword">const</span><span class="operator"> ;</span><span class="type">
+    
+    void</span> setRecipientAddress<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;);</span>
+    string getRecipientAddress<span class="operator">()</span><span class="keyword"> const</span><span class="operator">;</span><span class="type">
+    
+    void</span> setWeight<span class="operator">(</span><span class="type">double</span><span class="operator">);</span><span class="type">
+    double</span> getWeight<span class="operator">()</span><span class="keyword">const</span><span class="operator">;</span><span class="type">
+    
+    void</span> setCPO<span class="operator">(</span><span class="keyword">const</span><span class="type"> double</span><span class="operator">);</span><span class="type">
+    double</span> getCPO<span class="operator">()</span><span class="keyword">const</span><span class="operator">;</span><span class="keyword">
+    
+    virtual</span><span class="type"> double</span> calculate<span class="operator">()</span><span class="keyword"> const</span><span class="operator">;</span><span class="keyword">
+    virtual</span><span class="type"> void</span> print<span class="operator">()</span><span class="keyword"> const</span><span class="operator">;</span><span class="keyword">
+    
+private</span><span class="operator">:</span>
+    
+    string sName<span class="operator">;</span>
+    string sAddress<span class="operator">;</span>
+    string rName<span class="operator">;</span>
+    string rAddress<span class="operator">;</span><span class="type">
+    double</span> weight<span class="operator">;</span><span class="type">
+    double</span> costPerOunce<span class="operator">;
+    
+};</span>
+                  </div>
+                  <div class="tab-pane fade" id="packageCPP">
+                   <pre class="prettyprint cpp"> <pre><span class="pre">#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include "Package.h"
+</span>
+Package<span class="operator">::</span>Package<span class="operator">(</span>string<span class="keyword"> const</span><span class="operator"> &amp;</span>senderName<span class="operator">,</span> string<span class="keyword"> const</span><span class="operator"> &amp;</span>senderAddress<span class="operator">,</span> string<span class="keyword"> const</span><span class="operator"> &amp;</span>recipientName<span class="operator">,</span> string<span class="keyword"> const</span><span class="operator"> &amp;</span>$<span class="operator">
+
+{</span>
+    sName<span class="operator"> =</span> senderName<span class="operator">;</span>
+    sAddress<span class="operator"> =</span> senderAddress<span class="operator">;</span>
+    rName<span class="operator"> =</span> recipientName<span class="operator">;</span>
+    rAddress<span class="operator"> =</span> recipientAddress<span class="operator">;</span>
+    setWeight<span class="operator">(</span>w<span class="operator">);</span>
+    setCPO<span class="operator">(</span>cpo<span class="operator">);
+   
+    
+}</span><span class="type">
+
+void</span> Package<span class="operator">::</span>setSenderName<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;</span>senderName<span class="operator">)
+{</span>
+    sName<span class="operator"> =</span> senderName<span class="operator">;
+}</span>
+
+string Package<span class="operator">::</span>getSenderName<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="flow">
+    return</span> sName<span class="operator">;
+}</span><span class="type">
+
+void</span> Package<span class="operator">::</span>setSenderAddress<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;</span>senderAddress<span class="operator">)
+{</span>
+    sAddress<span class="operator"> =</span> senderAddress<span class="operator">;
+}</span>
+string Package<span class="operator">::</span>getSenderAddress<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="flow">
+    return</span> sAddress<span class="operator">;
+}</span><span class="type">
+
+void</span> Package<span class="operator">::</span>setRecipientName<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;</span>recipientName<span class="operator">)
+{</span>
+    rName<span class="operator"> =</span> recipientName<span class="operator">;
+}</span>
+
+string Package<span class="operator">::</span>getRecipientName<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="flow">
+    return</span> rName<span class="operator">;
+}</span><span class="type">
+
+void</span> Package<span class="operator">::</span>setRecipientAddress<span class="operator">(</span><span class="keyword">const</span> string<span class="operator"> &amp;</span>recipientAddress<span class="operator">)
+{</span>
+    rAddress<span class="operator"> =</span> recipientAddress<span class="operator">;
+}</span>
+string Package<span class="operator">::</span>getRecipientAddress<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="flow">
+    return</span> rAddress<span class="operator">;
+}</span><span class="type">
+void</span> Package<span class="operator">::</span> setCPO<span class="operator">(</span><span class="keyword">const</span><span class="type"> double</span> cpo<span class="operator">)
+{</span><span class="flow">
+    if</span><span class="operator"> (</span>cpo<span class="operator"> &gt;</span><span class="float"> 0.0</span><span class="operator">)</span>
+        costPerOunce<span class="operator"> =</span> cpo<span class="operator">;</span><span class="flow">
+    else</span>  cout<span class="operator"> &lt;&lt;</span><span class="string"> "Weight needs to be positive"</span><span class="operator">;
+
+    
+}</span><span class="type">
+
+double</span> Package<span class="operator">::</span>getCPO<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="flow">
+    return</span> costPerOunce<span class="operator">;
+}</span><span class="type">
+
+double</span> Package<span class="operator">::</span>calculate<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span><span class="comment">
+ //   cout&lt;&lt; getWeight() * getCPO();
+</span><span class="flow">    return</span>  getWeight<span class="operator">() *</span> getCPO<span class="operator">();
+    
+}</span><span class="type">
+
+void</span> Package<span class="operator">::</span>print<span class="operator">()</span><span class="keyword"> const</span><span class="operator">
+{</span>
+    cout<span class="operator"> &lt;&lt;</span> getSenderName<span class="operator">() &lt;&lt;</span> endl<span class="operator"> &lt;&lt;</span> getSenderAddress<span class="operator">() &lt;&lt;</span> endl<span class="operator"> &lt;&lt;</span> getRecipientName<span class="operator">() &lt;&lt;</span> endl<span class="operator"> &lt;&lt;</span> getRecipientAddr$<span class="operator">
+    &lt;&lt;</span> getWeight<span class="operator">() &lt;&lt;</span> endl<span class="operator"> &lt;&lt;</span> getCPO<span class="operator">() &lt;&lt;</span>endl<span class="operator"> &lt;&lt;</span>calculate<span class="operator">() &lt;&lt;</span> endl<span class="operator">;
+}</span>
+</pre>
+                  </div>
+                  <div class="tab-pane fade" id="packageMainCPP">
+                    <pre class="prettyprint cpp">
+#include &lt;iostream&gt;
+#include &lt;sstream&gt;
+#include &lt;fstream&gt;
+#include &lt;vector&gt;
+#include "Package.cpp"
+#include "TwoDayPackage.cpp"
+#include "OvernightPackage.cpp"
+#include "Package.h"
+</span><span class="type">
+int</span><span class="keyword"> main</span><span class="operator">() {</span><span class="comment">
+    
+    //Opening File
+</span>    ifstream File<span class="operator">(</span><span class="string">"info.txt"</span><span class="operator">,</span> ios<span class="operator">::</span>in<span class="operator">);</span><span class="flow">
+    
+    if</span><span class="operator">(!</span>File<span class="operator">)
+    {</span>
+        cerr<span class="operator"> &lt;&lt;</span><span class="string"> "file not opened"</span><span class="operator">&lt;&lt;</span> endl<span class="operator">;</span>
+        exit<span class="operator">(</span><span class="int">1</span><span class="operator">);
+    }</span><span class="comment">
+    //String Init
+</span>    string senderN<span class="operator">;</span>
+    string senderA<span class="operator">;</span>
+    string recipientN<span class="operator">;</span>
+    string recipientA<span class="operator">;</span>
+    string type<span class="operator">;</span>
+    string buffer<span class="operator">;</span>
+    
+ 
+   ifstream file<span class="operator"> (</span><span class="string">"info.txt"</span><span class="operator">);</span><span class="comment">
+ //array to store tokens
+</span> string tokens<span class="operator">[</span><span class="int">8</span><span class="operator">];</span><span class="type">
+    int</span> i<span class="operator"> =</span><span class="int">0</span><span class="operator">;</span><span class="type">
+    int</span> j<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="comment">
+   
+   
+    //vector of Package type objects
+</span>    vector<span class="operator">&lt;</span>Package<span class="operator"> *&gt;</span> myPack<span class="operator">(</span><span class="int">5</span><span class="operator">);</span><span class="comment">
+    
+    //Reading and tokenizing string
+</span><span class="flow">    while</span><span class="operator"> (</span>file<span class="operator">.</span>eof<span class="operator">()!=</span><span class="bool">true</span><span class="operator">)
+{</span>
+    getline<span class="operator">(</span>file<span class="operator">,</span>buffer<span class="operator">);</span>
+    string token<span class="operator">,</span> text<span class="operator">(</span>buffer<span class="operator">);</span>
+    istringstream iss<span class="operator">(</span>text<span class="operator">);</span><span class="flow">
+    
+    while</span><span class="operator"> (</span>getline<span class="operator">(</span>iss<span class="operator">,</span> token<span class="operator">,</span><span class="char"> '|'</span><span class="operator">)){</span>
+
+        tokens<span class="operator">[</span>i<span class="operator">]=</span>token<span class="operator">;</span>
+        i<span class="operator">++;
+    }</span><span class="comment">
+    
+    //Create corret object type according to token
+</span><span class="flow">     if</span><span class="operator"> (</span>tokens<span class="operator">[</span><span class="int">7</span><span class="operator">]==</span><span class="string">"regular"</span><span class="operator">)
+    {</span>
+        myPack<span class="operator">[</span>j<span class="operator">] =</span><span class="keyword"> new</span> Package<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">0</span><span class="operator">] ,</span>tokens<span class="operator">[</span><span class="int">1</span><span class="operator">],</span>tokens<span class="operator">[</span><span class="int">2</span><span class="operator">],</span>tokens<span class="operator">[</span><span class="int">3</span><span class="operator">],</span> stod<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">4</span><span class="operator">]),</span> stod<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">5</span><span class="operator">]));
+    }</span><span class="flow">
+    if</span><span class="operator"> (</span>tokens<span class="operator">[</span><span class="int">7</span><span class="operator">]==</span><span class="string">"two days"</span><span class="operator">)
+    {</span>
+        myPack<span class="operator">[</span>j<span class="operator">] =</span><span class="keyword"> new</span> TwoDayPackage<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">0</span><span class="operator">] ,</span>tokens<span class="operator">[</span><span class="int">1</span><span class="operator">],</span>tokens<span class="operator">[</span><span class="int">2</span><span class="operator">],</span>tokens<span class="operator">[</span><span class="int">3</span><span class="operator">],</span> stod<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">4</span><span class="operator">]),</span> stod<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">5</span><span class="operator">]),</span> s$<span class="operator">
+    }</span><span class="flow">
+    if</span><span class="operator"> (</span>tokens<span class="operator">[</span><span class="int">7</span><span class="operator">]==</span><span class="string">"overnight"</span><span class="operator">)
+    {</span>
+        myPack<span class="operator">[</span>j<span class="operator">] =</span><span class="keyword"> new</span> OvernightPackage<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">0</span><span class="operator">] ,</span>tokens<span class="operator">[</span><span class="int">1</span><span class="operator">],</span>tokens<span class="operator">[</span><span class="int">2</span><span class="operator">],</span>tokens<span class="operator">[</span><span class="int">3</span><span class="operator">],</span> stod<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">4</span><span class="operator">]),</span> stod<span class="operator">(</span>tokens<span class="operator">[</span><span class="int">5</span><span class="operator">])</span>$<span class="operator">
+
+    }</span>
+
+    j<span class="operator">++;</span>
+    i<span class="operator">=</span><span class="int">0</span><span class="operator">;
+    
+    
+}</span>
+    j<span class="operator">--;</span><span class="type">
+    double</span> total<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="comment">
+
+
+//CALCULATIONS    
+</span><span class="flow">     for</span><span class="operator">(</span><span class="type">int</span> i<span class="operator">=</span><span class="int">0</span><span class="operator">;</span> i<span class="operator">&lt;</span>j<span class="operator">;</span> i<span class="operator">++){</span>
+         total<span class="operator">+=</span> myPack<span class="operator">[</span>i<span class="operator">] -&gt;</span> calculate<span class="operator">();
+        
+     }</span><span class="type">
+    
+    
+
+    double</span> total1<span class="operator">=</span><span class="int">0</span><span class="operator">,</span>total2<span class="operator">=</span><span class="int">0</span><span class="operator">,</span>total3<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="type">
+    int</span> sumt<span class="operator">=</span><span class="int">0</span><span class="operator">,</span> sum2<span class="operator">=</span><span class="int">0</span><span class="operator">,</span> sum3<span class="operator">=</span><span class="int">0</span><span class="operator">;</span><span class="flow">
+    for</span><span class="operator">(</span><span class="type">int</span> i<span class="operator">=</span><span class="int">0</span><span class="operator">;</span> i<span class="operator">&lt;</span>j<span class="operator">;</span> i<span class="operator">++){</span><span class="flow">
+        if</span><span class="operator">  (</span><span class="keyword">dynamic_cast</span><span class="operator">&lt;</span>TwoDayPackage<span class="operator">*&gt;(</span>myPack<span class="operator">[</span>i<span class="operator">]) !=</span> NULL<span class="operator">){</span>
+            total2<span class="operator"> +=</span> myPack<span class="operator">[</span>i<span class="operator">] -&gt;</span> calculate<span class="operator">();</span>
+            sum2<span class="operator">++;
+            ;
+          
+        }</span><span class="flow">
+        if</span><span class="operator">  (</span><span class="keyword">dynamic_cast</span><span class="operator">&lt;</span>OvernightPackage<span class="operator">*&gt;(</span>myPack<span class="operator">[</span>i<span class="operator">]) !=</span> NULL<span class="operator">){</span>
+            total3<span class="operator"> +=</span> myPack<span class="operator">[</span>i<span class="operator">] -&gt;</span> calculate<span class="operator">();</span>
+            sum3<span class="operator">++;
+            ;
+        }</span><span class="flow">
+        
+        if</span><span class="operator">  (</span><span class="keyword">dynamic_cast</span><span class="operator">&lt;</span>Package<span class="operator">*&gt;(</span>myPack<span class="operator">[</span>i<span class="operator">]) !=</span> NULL<span class="operator">){</span>
+            total1<span class="operator"> +=</span> myPack<span class="operator">[</span>i<span class="operator">] -&gt;</span> calculate<span class="operator">();</span>
+            sumt<span class="operator">++;
+            }
+   
+       
+    }</span><span class="flow">
+    if</span><span class="operator"> (</span>total2<span class="operator"> &gt;</span> total3<span class="operator">){</span>
+        total1<span class="operator">=</span> total2<span class="operator">-</span>total3<span class="operator">;
+    }</span><span class="flow">
+    else</span> total1<span class="operator"> =</span> total3<span class="operator">-</span>total2<span class="operator">;</span><span class="comment">
+    
+    
+    // Printing
+</span><span class="type">    int</span> sum1<span class="operator">=</span> sumt<span class="operator">-</span>sum2<span class="operator">-</span>sum3<span class="operator">;</span>
+    cout<span class="operator"> &lt;&lt;</span><span class="string"> "--------------------------------------------------"</span><span class="operator">;</span>
+    cout<span class="operator"> &lt;&lt;</span>endl<span class="operator">&lt;&lt;</span><span class="string">"regular total: "</span><span class="operator">&lt;&lt;</span> total1<span class="operator">&lt;&lt;</span><span class="string">"\t Sum: "</span><span class="operator">&lt;&lt;</span>sum1<span class="operator">;</span>
+    cout<span class="operator"> &lt;&lt;</span>endl<span class="operator">&lt;&lt;</span><span class="string">"two day total: "</span><span class="operator">&lt;&lt;</span> total2<span class="operator">&lt;&lt;</span><span class="string">"\t Sum: "</span><span class="operator">&lt;&lt;</span>sum2<span class="operator">;</span>
+    cout<span class="operator"> &lt;&lt;</span>endl<span class="operator">&lt;&lt;</span><span class="string">"Overnight total: "</span><span class="operator">&lt;&lt;</span> total3<span class="operator">&lt;&lt;</span><span class="string">"\t Sum: "</span><span class="operator">&lt;&lt;</span>sum3<span class="operator">;</span>
+    cout<span class="operator"> &lt;&lt;</span>endl<span class="operator">&lt;&lt;</span><span class="string"> "total: "</span><span class="operator">&lt;&lt;</span> total<span class="operator">;</span>
+    cout<span class="operator"> &lt;&lt;</span>endl<span class="operator">;
+
+
+}</pre></span>
+
+
+   
+
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                
+
+<!--Pretty code--> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> 
+
+<!-- jQuery --> 
+<script src="js/jquery.js"></script> 
+
+<!-- Bootstrap Core JavaScript --> 
+<script src="js/bootstrap.min.js"></script> 
+
+<!-- Custom Theme JavaScript --> 
+<script>
+	
+	// Center Modals
+	$(function() {
+    function reposition() {
+        var modal = $(this),
+            dialog = modal.find('.modal-dialog');
+        modal.css('display', 'block');
+        
+        // Dividing by two centers the modal exactly, but dividing by three 
+        // or four works better for larger screens.
+        dialog.css("margin-top", Math.max(0, ($(window).height() - dialog.height()) / 2));
+    }
+    // Reposition when a modal is shown
+    $('.modal').on('show.bs.modal', reposition);
+    // Reposition when the window is resized
+    $(window).on('resize', function() {
+        $('.modal:visible').each(reposition);
+    });
+});
+
+
+
+    
+	
+	// Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>
